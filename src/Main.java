@@ -14,13 +14,11 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
-import javafx.scene.shape.Sphere;
 import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Transform;
 import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.stream.IntStream;
@@ -68,12 +66,18 @@ public class Main extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(400, 40, 100, 100);
-        IntStream.range(0,2000).forEach((n)->{
-            bin.add(new Cuboid((int)((Math.random() + 1)* 5),(int)((Math.random()+1)* 5),(int)((Math.random()+1)* 5)));
+        Bin bin = new Bin(400, 400, 100, 100);
+        IntStream.range(0,500).forEach((n)->{
+            bin.add(new Cuboid((int)((Math.random() + 1)* 20),(int)((Math.random()+1)* 20),(int)((Math.random()+1)* 20), bin));
         });
-        BruteAlgoritm bruteAlgoritm = new BruteAlgoritm();
-        bruteAlgoritm.execute(bin);
+        Algorithm algorithm = new BruteForceAlgorithm();
+        algorithm.solve(bin);
+        System.out.println(bin.getHeight());
+
+        bin.setHeight(0);
+        Algorithm algorithm2 = new BruteForceAlgorithmWithSorting();
+        algorithm2.solve(bin);
+        System.out.println(bin.getHeight());
 
         PrintWriter printWriter = new PrintWriter("result.txt");
         for (Cuboid cuboid : bin.getCuboids())
@@ -87,8 +91,6 @@ public class Main extends Application {
             box1.setTranslateX(cuboid.getBinPosition().getX()  + (double)cuboid.getX()/2);
             box1.setTranslateY(cuboid.getBinPosition().getY()  + (double)cuboid.getY()/2);
             box1.setTranslateZ(cuboid.getBinPosition().getZ()  + (double)cuboid.getZ()/2);
-            System.out.print(cuboid.getX() + " " +  cuboid.getY() + " " + cuboid.getZ() + " ");
-            System.out.println();
             world.getChildren().addAll(box1);
         }
 
@@ -100,7 +102,6 @@ public class Main extends Application {
         binBox.setTranslateX(bin.getX()/2);
         binBox.setTranslateY(bin.getY()/2);
         binBox.setTranslateZ(bin.getHeight()/2);
-        System.out.println(bin.getHeight());
         world.getChildren().add(binBox);
     }
 

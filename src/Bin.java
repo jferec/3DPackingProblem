@@ -55,7 +55,6 @@ public class Bin {
         this.cuboids.add(box);
     }
 
-
     public ArrayList<Cuboid> getCuboids() {
         return cuboids;
     }
