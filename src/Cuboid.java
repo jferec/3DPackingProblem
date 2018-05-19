@@ -59,6 +59,12 @@ public class Cuboid {
             }
         }
     }
+    public void rotatePlaneZ(){
+        int tmp = getX();
+        setX(getY());
+        setY(tmp);
+    }
+
 
     public void setBinPosition(double x, double y, double z)
     {

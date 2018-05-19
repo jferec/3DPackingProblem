@@ -5,6 +5,8 @@ public class Bin {
 
     final private int x;
     final private int y;
+    final private int maxBoxX;
+    final private int maxBoxY;
     private double height;
     private ArrayList<Cuboid> cuboids = new ArrayList<Cuboid>();
 
@@ -26,12 +28,22 @@ public class Bin {
         this.height = height;
     }
 
-    Bin(int x, int y)
+    public int getMaxBoxX() {
+        return maxBoxX;
+    }
+
+    public int getMaxBoxY() {
+        return maxBoxY;
+    }
+
+    Bin(int x, int y, int maxBoxX, int maxBoxY)
     {
         if(x <= 0 || y<= 0)
             throw new IllegalArgumentException("Length or width is negative or equal 0");
         else
         {
+            this.maxBoxX = maxBoxX;
+            this.maxBoxY = maxBoxY;
             this.x = x;
             this.y = y;
         }

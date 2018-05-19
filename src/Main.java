@@ -68,24 +68,25 @@ public class Main extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(10, 10);
+        Bin bin = new Bin(400, 40, 100, 100);
         IntStream.range(0,2000).forEach((n)->{
             bin.add(new Cuboid((int)((Math.random() + 1)* 5),(int)((Math.random()+1)* 5),(int)((Math.random()+1)* 5)));
         });
-        BruteAlgoritm.execute(bin);
+        BruteAlgoritm bruteAlgoritm = new BruteAlgoritm();
+        bruteAlgoritm.execute(bin);
 
         PrintWriter printWriter = new PrintWriter("result.txt");
         for (Cuboid cuboid : bin.getCuboids())
-            printWriter.println(cuboid.getBinPosition().getX()+ " " + cuboid.getBinPosition().getY() + " "+  cuboid.getBinPosition().getZ());
+           // printWriter.println(cuboid.getBinPosition().getX()+ " " + cuboid.getBinPosition().getY() + " "+  cuboid.getBinPosition().getZ());
         printWriter.close();
 
         for(Cuboid cuboid : bin.getCuboids())
         {
             Box box1 = new Box(cuboid.getX(), cuboid.getY(), cuboid.getZ());
             box1.setMaterial(new PhongMaterial(new Color(Math.random(), Math.random(), Math.random(), 1)));
-            box1.setTranslateX(cuboid.getBinPosition().getX());
-            box1.setTranslateY(cuboid.getBinPosition().getY());
-            box1.setTranslateZ(cuboid.getBinPosition().getZ());
+            box1.setTranslateX(cuboid.getBinPosition().getX()  + (double)cuboid.getX()/2);
+            box1.setTranslateY(cuboid.getBinPosition().getY()  + (double)cuboid.getY()/2);
+            box1.setTranslateZ(cuboid.getBinPosition().getZ()  + (double)cuboid.getZ()/2);
             System.out.print(cuboid.getX() + " " +  cuboid.getY() + " " + cuboid.getZ() + " ");
             System.out.println();
             world.getChildren().addAll(box1);
