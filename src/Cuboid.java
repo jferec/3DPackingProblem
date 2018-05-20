@@ -107,6 +107,16 @@ public class Cuboid {
         setY(tmp);
     }
 
+    public void setVertical(){
+        if(getX() > getY())
+            rotatePlaneZ();
+    }
+
+    public void setHorizontal(){
+        if(getY() > getX())
+            rotatePlaneZ();
+    }
+
     public int countOrientations(){
         int count = 6;
         if(getX() == getY())
@@ -132,5 +142,9 @@ public class Cuboid {
 
     public Position getBinPosition() {
         return binPosition;
+    }
+
+    public int getZPlaneArea(){
+        return getX()*getY();
     }
 }

@@ -1,31 +1,25 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
-
-/***
- * Step 1:
- * Rotate each Cuboid in the Bin to smallest height
- * Step 2:
- * Find
- */
-public class BruteForceAlgorithm extends Algorithm{
+public class NaiveWithSorting extends Algorithm {
 
     @Override
-    public Bin solve(Bin bin)
-    {
+    Bin solve(Bin bin) {
         int  xMax = 0, yMax = 0;
         ArrayList<Sector> sectors = new ArrayList<>();
         Sector.createSectors(sectors, bin, xMax, yMax);
 
         int i = 0;
-
         for(Cuboid c : bin.getCuboids()){
-            Sector.fit(c, sectors.get(i));
+            Sector.fit(c, findLowestSector(sectors));
             i = (i + 1)%sectors.size();
         }
 
         return bin;
     }
 
+    private Sector findLowestSector(ArrayList<Sector> sectors){
+       sectors.sort(Comparator.comparing(Sector::getHeight));
+       return sectors.get(0);
+    }
 }
-
-

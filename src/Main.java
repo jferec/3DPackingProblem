@@ -70,12 +70,12 @@ public class Main extends Application {
         IntStream.range(0,500).forEach((n)->{
             bin.add(new Cuboid((int)((Math.random() + 1)* 20),(int)((Math.random()+1)* 20),(int)((Math.random()+1)* 20), bin));
         });
-        Algorithm algorithm = new BruteForceAlgorithm();
+        Algorithm algorithm = new Naive();
         algorithm.solve(bin);
         System.out.println(bin.getHeight());
 
         bin.setHeight(0);
-        Algorithm algorithm2 = new BruteForceAlgorithmWithSorting();
+        Algorithm algorithm2 = new NaiveWithSorting();
         algorithm2.solve(bin);
         System.out.println(bin.getHeight());
 
