@@ -18,6 +18,12 @@ import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Transform;
 import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
+import naive.Naive;
+import naive.NaiveWithSorting;
+import newshelf.ShelfBestAreaFitNew;
+import util.*;
+import shelf.*;
+import naive.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -70,14 +76,14 @@ public class Main extends Application {
         IntStream.range(0,500).forEach((n)->{
             bin.add(new Cuboid((int)((Math.random() + 1)* 20),(int)((Math.random()+1)* 20),(int)((Math.random()+1)* 20), bin));
         });
-        Algorithm algorithm = new Naive();
-        algorithm.solve(bin);
-        System.out.println(bin.getHeight());
 
         bin.setHeight(0);
-        Algorithm algorithm2 = new NaiveWithSorting();
+        Algorithm algorithm2 = new ShelfBestAreaFitNew();
         algorithm2.solve(bin);
         System.out.println(bin.getHeight());
+
+
+
 
         PrintWriter printWriter = new PrintWriter("result.txt");
         for (Cuboid cuboid : bin.getCuboids())

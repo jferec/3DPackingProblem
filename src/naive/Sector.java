@@ -1,3 +1,8 @@
+package naive;
+
+import util.Bin;
+import util.Cuboid;
+
 import java.util.ArrayList;
 
 public class Sector {

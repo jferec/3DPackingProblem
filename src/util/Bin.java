@@ -1,3 +1,5 @@
+package util;
+
 import java.util.ArrayList;
 
 public class Bin {
@@ -36,7 +38,7 @@ public class Bin {
         return maxBoxY;
     }
 
-    Bin(int x, int y, int maxBoxX, int maxBoxY)
+    public Bin(int x, int y, int maxBoxX, int maxBoxY)
     {
         if(x <= 0 || y<= 0)
             throw new IllegalArgumentException("Length or width is negative or equal 0");

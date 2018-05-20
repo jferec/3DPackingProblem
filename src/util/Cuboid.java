@@ -1,3 +1,7 @@
+package util;
+
+import util.Bin;
+
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -9,7 +13,7 @@ public class Cuboid {
     private Bin bin;
     private Position binPosition;
 
-    Cuboid(int x, int y, int z, Bin bin)
+    public Cuboid(int x, int y, int z, Bin bin)
     {
         if(x > 0 && y > 0 && z > 0) {
             this.x = x;
