@@ -143,6 +143,9 @@ public class Cuboid {
             binPosition.setZ(z);
         }
     }
+    public int getVolume(){
+        return getX()*getY()*getZ();
+    }
 
     public Position getBinPosition() {
         return binPosition;

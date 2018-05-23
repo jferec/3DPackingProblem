@@ -56,5 +56,16 @@ public class Bin {
         return getX()*getY();
     }
 
+    public double getVolume(){
+        return getZPlaneArea()*getH();
+    }
+
+    public double getFill(){
+        double v = 0;
+        for (Cuboid c : getCuboids()){
+            v+=c.getVolume();
+        }
+        return v/getVolume()*100;
+    }
 
 }

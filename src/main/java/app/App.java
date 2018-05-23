@@ -1,6 +1,4 @@
-
-
-
+package app;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -15,17 +13,18 @@ import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Transform;
 import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
-import naive.Naive;
-import naive.NaiveWithSorting;
 import shelf.ShelfBestAreaFit;
-import util.*;
+import util.Algorithm;
+import util.Bin;
+import util.Cuboid;
+
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class Main extends Application {
+public class App extends Application {
 
     final Group root = new Group();
     final XformWorld world = new XformWorld();
@@ -76,6 +75,7 @@ public class Main extends Application {
         Algorithm algorithm2 = new ShelfBestAreaFit();
         algorithm2.solve(bin);
         System.out.println(bin.getH());
+        System.out.println((double)Math.round(bin.getFill() * 100.0)/100 + " %");
 
 
         PrintWriter printWriter = new PrintWriter("result.txt");
