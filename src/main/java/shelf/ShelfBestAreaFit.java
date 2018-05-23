@@ -31,12 +31,13 @@ public class ShelfBestAreaFit extends Algorithm {
     void fit(Cuboid c, ArrayList<ZShelf> shelves) {
         EmptySpace bestEmptySpace = findBestFit(c, shelves);
         if(bestEmptySpace != null){
-            bestEmptySpace.split(c);
+            bestEmptySpace.horizontalSplit(c);
             return;
         }
         else {
             boolean y = false;
             for (ZShelf z : getZShelves()){
+                c.setVertical();
                 y = z.createYShelf(c);
                 if(y) {
                     return;

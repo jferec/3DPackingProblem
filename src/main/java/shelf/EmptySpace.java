@@ -3,6 +3,10 @@ package shelf;
 import org.junit.Assert;
 import util.Cuboid;
 
+/***
+ * Class represents empty space on a YShelf object. EmptySpace (rectangle) is defined in 2D by 4 vertices - Xs,Ys represent starting point
+ * and Xe, Ye - ending point.
+ */
 public class EmptySpace {
 
     private int xs;
@@ -22,17 +26,34 @@ public class EmptySpace {
         System.out.println("s: " + xs + " " + ys + "| e: " + xe + " " + ye);
     }
 
-    void split(Cuboid c) {
-        try {
+    /***
+     * Operation splits horizontally
+     * @param c
+     */
+    void horizontalSplit(Cuboid c) {
+
             if(c.getX() > getX() || c.getY() > getY())
                 c.rotatePlaneZ();
             if(getYs() + c.getY() < getYe())
                 getShelf().getEmptySpaces().add(new EmptySpace(getXs(), getYs()+c.getY(), getXe(), getYe(), getShelf()));
             if(getXs() + c.getX() < getXe())
                 getShelf().getEmptySpaces().add(new EmptySpace(getXs() + c.getX(), getYs(), getXe(), getYs() + c.getY(), getShelf()));
-        } catch (Exception ex) {
-            System.out.println("empty");
-        }
+
+        c.setBinPosition(getXs(), getYs() + getShelf().getH(), getShelf().getzShelf().getH());
+        System.out.println("Cuboid "  + "(" + c.getX() + " " + c.getY() + " " + c.getZ() + ")" + c.getBinPosition().getX() + " " +  c.getBinPosition().getY() + " " +  c.getBinPosition().getZ());
+        getShelf().getEmptySpaces().remove(this);
+    }
+
+
+    void verticalSplit(Cuboid c) {
+
+            if(c.getX() > getX() || c.getY() > getY())
+                c.rotatePlaneZ();
+            if(getYs() + c.getY() < getYe())
+                getShelf().getEmptySpaces().add(new EmptySpace(getXs(), getYs()+c.getY(), getXs() + c.getX(), getYe(), getShelf()));
+            if(getXs() + c.getX() < getXe())
+                getShelf().getEmptySpaces().add(new EmptySpace(getXs() + c.getX(), getYs(), getXe(), getYs(), getShelf()));
+
         c.setBinPosition(getXs(), getYs() + getShelf().getH(), getShelf().getzShelf().getH());
         System.out.println("Cuboid "  + "(" + c.getX() + " " + c.getY() + " " + c.getZ() + ")" + c.getBinPosition().getX() + " " +  c.getBinPosition().getY() + " " +  c.getBinPosition().getZ());
         getShelf().getEmptySpaces().remove(this);
@@ -43,11 +64,11 @@ public class EmptySpace {
         return getX()*getY();
     }
 
-    YShelf getShelf() {
+    private YShelf getShelf() {
         return shelf;
     }
 
-    int getXs() {
+    private int getXs() {
         return xs;
     }
 
@@ -55,7 +76,7 @@ public class EmptySpace {
         this.xs = xs;
     }
 
-    int getXe() {
+    private int getXe() {
         return xe;
     }
 
@@ -63,13 +84,13 @@ public class EmptySpace {
         this.xe = xe;
     }
 
-    int getYs() {
+    private int getYs() {
         return ys;
     }
 
     void setYs(int ys) { this.ys = ys; }
 
-    int getYe() {
+    private int getYe() {
         return ye;
     }
 

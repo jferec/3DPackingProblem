@@ -52,5 +52,9 @@ public class Bin {
         return cuboids;
     }
 
+    public int getZPlaneArea(){
+        return getX()*getY();
+    }
+
 
 }

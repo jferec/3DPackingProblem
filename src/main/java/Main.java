@@ -5,10 +5,7 @@
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.geometry.Point3D;
-import javafx.scene.DepthTest;
-import javafx.scene.Group;
-import javafx.scene.PerspectiveCamera;
-import javafx.scene.Scene;
+import javafx.scene.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
@@ -46,7 +43,7 @@ public class Main extends Application {
         root.setDepthTest(DepthTest.ENABLE);
         buildCamera();
         buildBodySystem();
-        Scene scene = new Scene(root, 800, 600, true);
+        Scene scene = new Scene(root, 800, 600, true, SceneAntialiasing.BALANCED);
         scene.setFill(Color.BROWN);
         handleMouse(scene);
         primaryStage.setTitle("3D Packing Problem");
@@ -71,8 +68,8 @@ public class Main extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(60, 60);
-        IntStream.range(0,15).forEach((n)->{
+        Bin bin = new Bin(100, 100);
+        IntStream.range(0,100).forEach((n)->{
             bin.add(new Cuboid((int)(Math.ceil(Math.random()* 19 + 1)),(int)(Math.ceil(Math.random()* 50 + 1)),(int)(Math.ceil(Math.random()* 50 + 1)), bin));
         });
 
@@ -102,7 +99,7 @@ public class Main extends Application {
 
         PhongMaterial binMaterial = new PhongMaterial();
         binMaterial.setDiffuseColor(Color.web("#ffff0080"));
-        binMaterial.setSpecularColor(Color.TRANSPARENT);
+        //binMaterial.setSpecularColor(Color.INDIANRED);
         Box binBox = new Box(bin.getX(), bin.getY(), bin.getH());
         binBox.setMaterial(binMaterial);
         binBox.setTranslateX((double)bin.getX()/2);

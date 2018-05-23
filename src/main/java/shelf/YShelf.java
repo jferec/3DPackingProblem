@@ -20,14 +20,11 @@ public class YShelf {
         this.y = c.getY();
         this.zShelf = zShelf;
         this.h = zShelf.getOccupiedH();
-
+        zShelf.increaseOccupiedH(c.getY());
         this.emptySpaces = new HashSet<>();
         EmptySpace e = new EmptySpace(0, 0, getX(), getY(), this);
         emptySpaces.add(e);
-        e.split(c);
-        zShelf.increaseOccupiedH(c.getY());
-
-        System.out.println("YShelf " + getX() + " " + getY() + " " + getH() );
+        e.horizontalSplit(c);
     }
 
 

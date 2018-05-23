@@ -28,7 +28,6 @@ public class ZShelf {
         b.increaseH(c.getZ());
         yShelves = new ArrayList<>();
         yShelves.add(new YShelf(this, c));
-        System.out.println("Zshelf");
     }
 
     public void increaseOccupiedH(int value){
@@ -61,7 +60,8 @@ public class ZShelf {
     }
 
     private boolean checkNewShelfFit(Cuboid c){
-        return (c.getY() + getOccupiedH() < getY() && c.getX() + getOccupiedH() < getY());
+        c.setHorizontal();
+        return (c.getY() + getOccupiedH() < getY());
     }
 
     public int getX() {
