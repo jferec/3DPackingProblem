@@ -41,8 +41,6 @@ public class Sector {
                 xMax = c.getX();
             if(c.getY() > yMax)
                 yMax = c.getY();
-            if(xMax == bin.getMaxBoxX() && yMax == bin.getMaxBoxY())
-                break;
         }
 
         for (int i = 0; i <= bin.getX() - xMax; i += xMax) {
@@ -55,8 +53,8 @@ public class Sector {
     public static void fit(Cuboid c, Sector s){
         c.setBinPosition(s.getX(), s.getY(), s.getHeight());
         s.setHeight(s.getHeight() + c.getZ());
-        if(s.getHeight() > c.getBin().getHeight())
-            c.getBin().setHeight(s.getHeight());
+        if(s.getHeight() > c.getBin().getH())
+            c.getBin().setH(s.getHeight());
     }
 
 

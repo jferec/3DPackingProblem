@@ -1,36 +1,39 @@
 package shelf;
 
 import util.Cuboid;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class YShelf {
 
     private final int x;
-    private final int height;
+    private final int y;
+    private final int h;
     private final ZShelf zShelf;
     private Set<EmptySpace> emptySpaces;
 
 
-    YShelf(ZShelf zShelf, int x, int height) {
-        this.x = x;
-        this.height = height;
+
+    YShelf(ZShelf zShelf, Cuboid c) {
+        this.x = c.getBin().getX();
+        this.y = c.getY();
         this.zShelf = zShelf;
+        this.h = zShelf.getOccupiedH();
+
         this.emptySpaces = new HashSet<>();
-        emptySpaces.add(new EmptySpace(0, x, 0, height, this));
+        EmptySpace e = new EmptySpace(0, 0, getX(), getY(), this);
+        emptySpaces.add(e);
+        e.split(c);
+        zShelf.increaseOccupiedH(c.getY());
+
+        System.out.println("YShelf " + getX() + " " + getY() + " " + getH() );
     }
 
-    void split(EmptySpace e, Cuboid c) {
-        try {
-            if(e.getXs() + c.getX() < height)
-            emptySpaces.add(new EmptySpace(e.getXs() + c.getX(), e.getXs(), e.getYs(), e.getYe(), this));
-            if(e.getYs() + c.getY() < x)
-            emptySpaces.add(new EmptySpace(e.getXs(), e.getXe(), e.getYs() + c.getY(), e.getYe(), this));
-        } catch (Exception ex) {
-            System.out.println("empty");
-        }
-        c.setBinPosition(e.getXs(), e.getYs(), e.getShelf().getzShelf().getH());
-        emptySpaces.remove(e);
+
+
+    public Set<EmptySpace> getEmptySpaces() {
+        return emptySpaces;
     }
 
 
@@ -38,9 +41,20 @@ public class YShelf {
         return zShelf;
     }
 
-    public Set<EmptySpace> getEmptySpaces() {
-        return emptySpaces;
+
+    public int getX() {
+        return x;
     }
+
+
+    public int getY() {
+        return y;
+    }
+
+    public int getH() {
+        return h;
+    }
+
 
 
 }

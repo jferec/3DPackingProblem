@@ -1,60 +1,67 @@
 package shelf;
 
+import util.Bin;
 import util.Cuboid;
 
 import java.util.ArrayList;
 
+
+/***
+ * occupiedH - is a floor for a new yShelf
+ */
 public class ZShelf {
 
     private final int x;
     private final int y;
     private final int h;
-    private int currH;
-    private ArrayList<YShelf> xyShelves;
+    private final int z;
+    private int occupiedH;
+    private ArrayList<YShelf> yShelves;
 
-    ZShelf(int height, int x, int y) {
-        this.h = height;
-        this.x = x;
-        this.y = y;
-        xyShelves = new ArrayList<>();
+    ZShelf(Cuboid c) {
+        Bin b = c.getBin();
+        this.x = b.getX();
+        this.y = b.getY();
+        this.h = b.getH();
+        this.z = c.getZ();
+        this.occupiedH = 0;
+        b.increaseH(c.getZ());
+        yShelves = new ArrayList<>();
+        yShelves.add(new YShelf(this, c));
+        System.out.println("Zshelf");
     }
 
-    public ArrayList<YShelf> getXyShelves() {
-        return xyShelves;
+    public void increaseOccupiedH(int value){
+        setOccupiedH(getOccupiedH() + value);
     }
 
-    void addShelf(YShelf yShelf) {
-        xyShelves.add(yShelf);
+    public ArrayList<YShelf> getYShelves() {
+        return yShelves;
     }
 
     public int getH() {
         return h;
     }
 
-    public int getCurrH() {
-        return currH;
+    public int getOccupiedH() {
+        return occupiedH;
     }
 
-    public void setCurrH(int currH) {
-        this.currH = currH;
+    public void setOccupiedH(int occupiedH) {
+        this.occupiedH = occupiedH;
     }
 
-    YShelf openNewShelf(Cuboid c, int xBin){
+    boolean createYShelf(Cuboid c){
         if(checkNewShelfFit(c)) {
-            currH += c.getY();
-            YShelf y = new YShelf(this, xBin, c.getY());
-            getXyShelves().add(y);
-            return y;
+            YShelf y = new YShelf(this, c);
+            getYShelves().add(y);
+            return true;
         }
-        else return null;
+        else return false;
     }
 
-    boolean checkNewShelfFit(Cuboid c){
-        if(c.getY() < h - currH)
-            return true;
-        else
-            c.rotatePlaneZ();
-        return c.getY() < h - currH;
+    private boolean checkNewShelfFit(Cuboid c){
+        return (c.getY() + getOccupiedH() < getY() && c.getX() + getOccupiedH() < getY());
     }
 
     public int getX() {
@@ -63,6 +70,11 @@ public class ZShelf {
 
     public int getY() {
         return y;
+    }
+
+
+    public int getZ() {
+        return z;
     }
 
 

@@ -7,12 +7,13 @@ public class Bin {
 
     final private int x;
     final private int y;
-    final private int maxBoxX;
-    final private int maxBoxY;
-    private double height;
+    private int h;
     private ArrayList<Cuboid> cuboids = new ArrayList<Cuboid>();
 
 
+    public void increaseH(int value){
+        setH(getH() + value);
+    }
 
     public int getX() {
         return x;
@@ -22,34 +23,24 @@ public class Bin {
         return y;
     }
 
-    public double getHeight() {
-        return height;
+    public int getH() {
+        return h;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
+    public void setH(int h) {
+        this.h = h;
     }
 
-    public int getMaxBoxX() {
-        return maxBoxX;
-    }
-
-    public int getMaxBoxY() {
-        return maxBoxY;
-    }
-
-    public Bin(int x, int y, int maxBoxX, int maxBoxY)
+    public Bin(int x, int y)
     {
         if(x <= 0 || y<= 0)
             throw new IllegalArgumentException("Length or width is negative or equal 0");
         else
         {
-            this.maxBoxX = maxBoxX;
-            this.maxBoxY = maxBoxY;
             this.x = x;
             this.y = y;
         }
-        height = 0;
+        h = 0;
     }
 
     public void add(Cuboid box)
@@ -61,8 +52,5 @@ public class Bin {
         return cuboids;
     }
 
-    public void setCuboids(ArrayList<Cuboid> cuboids) {
-        this.cuboids = cuboids;
-    }
 
 }

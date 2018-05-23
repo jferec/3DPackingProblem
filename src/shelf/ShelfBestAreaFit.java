@@ -1,9 +1,11 @@
 package shelf;
-import util.*;
+
+import util.Algorithm;
+import util.Bin;
+import util.Cuboid;
+
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Set;
 
 public class ShelfBestAreaFit extends Algorithm {
 
@@ -13,7 +15,7 @@ public class ShelfBestAreaFit extends Algorithm {
         zShelves = new ArrayList<>();
     }
 
-    public ArrayList<ZShelf> getzShelves() {
+    public ArrayList<ZShelf> getZShelves() {
         return zShelves;
     }
 
@@ -21,59 +23,55 @@ public class ShelfBestAreaFit extends Algorithm {
     public Bin solve(Bin bin) {
         bin.getCuboids().sort(Comparator.comparing(Cuboid::getZ).reversed());
         for(Cuboid c: bin.getCuboids()){
-            fit(c, getzShelves() ,bin.getX(), bin.getY());
+            fit(c, getZShelves());
         }
         return bin;
     }
 
-    void fit(Cuboid c, ArrayList<ZShelf> shelves, int binX, int binY) {
-
+    void fit(Cuboid c, ArrayList<ZShelf> shelves) {
         EmptySpace bestEmptySpace = findBestFit(c, shelves);
         if(bestEmptySpace != null){
-            bestEmptySpace.getShelf().split(bestEmptySpace, c);
+            bestEmptySpace.split(c);
             return;
         }
         else {
-            YShelf y = null;
-            for (ZShelf z : getzShelves()){
-                y = z.openNewShelf(c, binX);
-                if(y != null) {
-                    findBestFit(c, getzShelves());
+            boolean y = false;
+            for (ZShelf z : getZShelves()){
+                y = z.createYShelf(c);
+                if(y) {
                     return;
                 }
             }
-
         }
-        createZShelf(c, binX, binY);
-
+        createZShelf(c);
     }
 
 
 
-    int areaFit(Cuboid c, EmptySpace e){
+    private int areaFit(Cuboid c, EmptySpace e){
         return e.getArea() - c.getZPlaneArea();
     }
 
-    boolean checkZPlaneFit(Cuboid c, EmptySpace e){
-        return ((c.getX() < e.getX() && c.getY() < e.getY()) || (c.getX()<e.getY() && c.getY() < e.getX()));
+    private boolean checkZPlaneFit(Cuboid c, EmptySpace e){
+        return ((c.getX() <=  e.getX() && c.getY()<= e.getY()) || (c.getX() <= e.getY() && c.getY() <= e.getX()));
     }
 
+    /***
+     *
+     * @param c Cuboid that is added
+     */
 
-
-    void createZShelf(Cuboid c, int x, int y){
-        ZShelf z = new ZShelf(c.getZ(), x, y);
-        getzShelves().add(z);
-        YShelf s = z.openNewShelf(c, x);
-        findBestFit(c, getzShelves());
+    private void createZShelf(Cuboid c){
+        getZShelves().add(new ZShelf(c));
     }
 
-    EmptySpace findBestFit(Cuboid c, ArrayList<ZShelf> shelves){
+    private EmptySpace findBestFit(Cuboid c, ArrayList<ZShelf> shelves){
         EmptySpace bestEmptySpace = null;
-        int bestFit = c.getZPlaneArea();
+        int bestFit = Integer.MAX_VALUE;
         for (ZShelf z : shelves) {
-            for (YShelf y : z.getXyShelves()) {
+            for (YShelf y : z.getYShelves()) {
                 for (EmptySpace e : y.getEmptySpaces()) {
-                    int aF = areaFit(c,e);
+                    int aF = areaFit(c, e);
                     if(checkZPlaneFit(c, e) && aF < bestFit) {
                         bestFit = aF;
                         bestEmptySpace = e;
@@ -84,6 +82,7 @@ public class ShelfBestAreaFit extends Algorithm {
         }
         return bestEmptySpace;
     }
+
 
 
 

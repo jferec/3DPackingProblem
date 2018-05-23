@@ -1,5 +1,8 @@
 package shelf;
 
+import org.junit.Assert;
+import util.Cuboid;
+
 public class EmptySpace {
 
     private int xs;
@@ -8,7 +11,7 @@ public class EmptySpace {
     private int ye;
     final private YShelf shelf;
 
-    EmptySpace(int xs, int xe, int ys, int ye, YShelf shelf) {
+    EmptySpace(int xs, int ys, int xe, int ye, YShelf shelf) {
         if (xs == xe || ys == ye)
             throw new IllegalArgumentException(" ");
         this.xs = xs;
@@ -16,53 +19,73 @@ public class EmptySpace {
         this.ys = ys;
         this.ye = ye;
         this.shelf = shelf;
+        System.out.println("s: " + xs + " " + ys + "| e: " + xe + " " + ye);
     }
+
+    void split(Cuboid c) {
+        try {
+            if(c.getX() > getX() || c.getY() > getY())
+                c.rotatePlaneZ();
+            if(getYs() + c.getY() < getYe())
+                getShelf().getEmptySpaces().add(new EmptySpace(getXs(), getYs()+c.getY(), getXe(), getYe(), getShelf()));
+            if(getXs() + c.getX() < getXe())
+                getShelf().getEmptySpaces().add(new EmptySpace(getXs() + c.getX(), getYs(), getXe(), getYs() + c.getY(), getShelf()));
+        } catch (Exception ex) {
+            System.out.println("empty");
+        }
+        c.setBinPosition(getXs(), getYs() + getShelf().getH(), getShelf().getzShelf().getH());
+        System.out.println("Cuboid "  + "(" + c.getX() + " " + c.getY() + " " + c.getZ() + ")" + c.getBinPosition().getX() + " " +  c.getBinPosition().getY() + " " +  c.getBinPosition().getZ());
+        getShelf().getEmptySpaces().remove(this);
+    }
+
 
     int getArea(){
         return getX()*getY();
     }
 
-    public YShelf getShelf() {
+    YShelf getShelf() {
         return shelf;
     }
 
-    public int getXs() {
+    int getXs() {
         return xs;
     }
 
-    public void setXs(int xs) {
+    void setXs(int xs) {
         this.xs = xs;
     }
 
-    public int getXe() {
+    int getXe() {
         return xe;
     }
 
-    public void setXe(int xe) {
+    void setXe(int xe) {
         this.xe = xe;
     }
 
-    public int getYs() {
+    int getYs() {
         return ys;
     }
 
-    public void setYs(int ys) {
-        this.ys = ys;
-    }
+    void setYs(int ys) { this.ys = ys; }
 
-    public int getYe() {
+    int getYe() {
         return ye;
     }
 
-    public void setYe(int ye) {
+    void setYe(int ye) {
         this.ye = ye;
     }
 
-    public int getX(){
+    int getX(){
         return getXe()-getXs();
     }
 
-    public int getY(){
+    int getY(){
         return getYe()-getYs();
     }
+
+
+
+
 }

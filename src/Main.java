@@ -20,13 +20,12 @@ import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
 import naive.Naive;
 import naive.NaiveWithSorting;
-import newshelf.ShelfBestAreaFitNew;
+import shelf.ShelfBestAreaFit;
 import util.*;
-import shelf.*;
-import naive.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.stream.IntStream;
 
 public class Main extends Application {
@@ -72,23 +71,21 @@ public class Main extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(400, 400, 100, 100);
-        IntStream.range(0,500).forEach((n)->{
-            bin.add(new Cuboid((int)((Math.random() + 1)* 20),(int)((Math.random()+1)* 20),(int)((Math.random()+1)* 20), bin));
+        Bin bin = new Bin(60, 60);
+        IntStream.range(0,15).forEach((n)->{
+            bin.add(new Cuboid((int)(Math.ceil(Math.random()* 19 + 1)),(int)(Math.ceil(Math.random()* 50 + 1)),(int)(Math.ceil(Math.random()* 50 + 1)), bin));
         });
 
-        bin.setHeight(0);
-        Algorithm algorithm2 = new ShelfBestAreaFitNew();
+        Algorithm algorithm2 = new ShelfBestAreaFit();
         algorithm2.solve(bin);
-        System.out.println(bin.getHeight());
-
-
+        System.out.println(bin.getH());
 
 
         PrintWriter printWriter = new PrintWriter("result.txt");
         for (Cuboid cuboid : bin.getCuboids())
-           // printWriter.println(cuboid.getBinPosition().getX()+ " " + cuboid.getBinPosition().getY() + " "+  cuboid.getBinPosition().getZ());
+           // printWriter.println(cuboid.getBinPosition().getX()+ " " + cuboid.getBinPosition().getY() + " "+  cuboid.getBinPosition().getH());
         printWriter.close();
+        ArrayList<Box> boxes = new ArrayList<>();
 
         for(Cuboid cuboid : bin.getCuboids())
         {
@@ -97,17 +94,20 @@ public class Main extends Application {
             box1.setTranslateX(cuboid.getBinPosition().getX()  + (double)cuboid.getX()/2);
             box1.setTranslateY(cuboid.getBinPosition().getY()  + (double)cuboid.getY()/2);
             box1.setTranslateZ(cuboid.getBinPosition().getZ()  + (double)cuboid.getZ()/2);
+            boxes.add(box1);
             world.getChildren().addAll(box1);
         }
+
+
 
         PhongMaterial binMaterial = new PhongMaterial();
         binMaterial.setDiffuseColor(Color.web("#ffff0080"));
         binMaterial.setSpecularColor(Color.TRANSPARENT);
-        Box binBox = new Box(bin.getX(), bin.getY(), bin.getHeight());
+        Box binBox = new Box(bin.getX(), bin.getY(), bin.getH());
         binBox.setMaterial(binMaterial);
-        binBox.setTranslateX(bin.getX()/2);
-        binBox.setTranslateY(bin.getY()/2);
-        binBox.setTranslateZ(bin.getHeight()/2);
+        binBox.setTranslateX((double)bin.getX()/2);
+        binBox.setTranslateY((double)bin.getY()/2);
+        binBox.setTranslateZ((double)bin.getH()/2);
         world.getChildren().add(binBox);
     }
 
