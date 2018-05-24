@@ -31,7 +31,8 @@ public class Sector {
         this.height = height;
     }
 
-    public static void createSectors(ArrayList <Sector> sectors, Bin bin, int xMax, int yMax){
+    public static void createSectors(ArrayList <Sector> sectors, Bin bin){
+        int xMax = 0, yMax = 0;
         for(Cuboid c : bin.getCuboids()) {
             c.rotateToSmallestHeight();
             if(c.getX() < c.getY()) {
@@ -42,10 +43,12 @@ public class Sector {
             if(c.getY() > yMax)
                 yMax = c.getY();
         }
+        System.out.println(xMax + " " + yMax);
 
         for (int i = 0; i <= bin.getX() - xMax; i += xMax) {
             for (int j = 0; j <= bin.getY() - yMax; j += yMax) {
                 sectors.add(new Sector(i, j));
+                System.out.println("lol");
             }
         }
     }

@@ -40,6 +40,10 @@ public class EmptySpace {
                 getShelf().getEmptySpaces().add(new EmptySpace(getXs() + c.getX(), getYs(), getXe(), getYs() + c.getY(), getShelf()));
 
         c.setBinPosition(getXs(), getYs() + getShelf().getH(), getShelf().getzShelf().getH());
+        if(c.getBinPosition().getX() + c.getX() > c.getBin().getX() || c.getBinPosition().getY() + c.getY() > c.getBin().getY() || c.getBinPosition().getZ() + c.getZ() > c.getBin().getH())
+            throw new IllegalStateException();
+        if(c.getBinPosition().getX() < 0 || c.getBinPosition().getY() < 0 || c.getBinPosition().getZ() < 0)
+            throw new IllegalStateException();
         System.out.println("Cuboid "  + "(" + c.getX() + " " + c.getY() + " " + c.getZ() + ")" + c.getBinPosition().getX() + " " +  c.getBinPosition().getY() + " " +  c.getBinPosition().getZ());
         getShelf().getEmptySpaces().remove(this);
     }

@@ -13,6 +13,7 @@ import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Transform;
 import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
+import naive.Naive;
 import shelf.ShelfBestAreaFit;
 import util.Algorithm;
 import util.Bin;
@@ -67,12 +68,12 @@ public class App extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(100, 100);
-        IntStream.range(0,100).forEach((n)->{
-            bin.add(new Cuboid((int)(Math.ceil(Math.random()* 19 + 1)),(int)(Math.ceil(Math.random()* 50 + 1)),(int)(Math.ceil(Math.random()* 50 + 1)), bin));
+        Bin bin = new Bin(102, 102);
+        IntStream.range(0,10000).forEach((n)->{
+            bin.add(new Cuboid((int)(Math.ceil(Math.random()* 50)),(int)(Math.ceil(Math.random()* 50)),(int)(Math.ceil(Math.random()* 50)), bin));
         });
 
-        Algorithm algorithm2 = new ShelfBestAreaFit();
+        Algorithm algorithm2 = new Naive();
         algorithm2.solve(bin);
         System.out.println(bin.getH());
         System.out.println((double)Math.round(bin.getFill() * 100.0)/100 + " %");
@@ -94,6 +95,7 @@ public class App extends Application {
             boxes.add(box1);
             world.getChildren().addAll(box1);
         }
+
 
 
 

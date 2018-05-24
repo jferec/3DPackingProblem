@@ -8,9 +8,8 @@ public class NaiveWithSorting extends Algorithm {
 
     @Override
     public Bin solve(Bin bin) {
-        int  xMax = 0, yMax = 0;
         ArrayList<Sector> sectors = new ArrayList<>();
-        Sector.createSectors(sectors, bin, xMax, yMax);
+        Sector.createSectors(sectors, bin);
 
         int i = 0;
         for(Cuboid c : bin.getCuboids()){
