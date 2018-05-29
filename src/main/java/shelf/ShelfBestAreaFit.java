@@ -21,6 +21,7 @@ public class ShelfBestAreaFit extends Algorithm {
 
     @Override
     public Bin solve(Bin bin) {
+        bin.setH(0);
         zShelves = new ArrayList<>();
         bin.getCuboids().sort(Comparator.comparing(Cuboid::getZ).reversed());
         for(Cuboid c: bin.getCuboids()){

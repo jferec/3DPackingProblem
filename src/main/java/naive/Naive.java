@@ -20,6 +20,7 @@ public class Naive extends Algorithm {
      */
     @Override
     public Bin solve(Bin bin) {
+        bin.setH(0);
         ArrayList<Sector> sectors = new ArrayList<>();
         Sector.createSectors(sectors, bin);
 

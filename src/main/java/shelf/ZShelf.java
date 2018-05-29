@@ -13,7 +13,7 @@ public class ZShelf {
 
     private final int x;
     private final int y;
-    private final int h;
+    private final long h;
     private final int z;
     private int occupiedH;
     private ArrayList<YShelf> yShelves;
@@ -38,7 +38,7 @@ public class ZShelf {
         return yShelves;
     }
 
-    int getH() {
+    long getH() {
         return h;
     }
 
@@ -46,7 +46,7 @@ public class ZShelf {
         return occupiedH;
     }
 
-    void setOccupiedH(int occupiedH) {
+    private void setOccupiedH(int occupiedH) {
         this.occupiedH = occupiedH;
     }
 

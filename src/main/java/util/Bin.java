@@ -7,11 +7,11 @@ public class Bin {
 
     final private int x;
     final private int y;
-    private int h;
+    private long h;
     private ArrayList<Cuboid> cuboids = new ArrayList<Cuboid>();
 
 
-    public void increaseH(int value){
+    public void increaseH(long value){
         setH(getH() + value);
     }
 
@@ -23,11 +23,11 @@ public class Bin {
         return y;
     }
 
-    public int getH() {
+    public long getH() {
         return h;
     }
 
-    public void setH(int h) {
+    public void setH(long h) {
         this.h = h;
     }
 
@@ -52,11 +52,11 @@ public class Bin {
         return cuboids;
     }
 
-    public int getZPlaneArea(){
+    private int getZPlaneArea(){
         return getX()*getY();
     }
 
-    public double getVolume(){
+    private double getVolume(){
         return getZPlaneArea()*getH();
     }
 

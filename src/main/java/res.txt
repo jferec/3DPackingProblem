@@ -8,26 +8,26 @@
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 10, maxSize = 250)
+# Parameters: (count = 100, maxSize = 100)
 
-# Run progress: 0,00% complete, ETA 00:40:00
+# Run progress: 0,00% complete, ETA 01:00:00
 # Fork: 1 of 1
-# Warmup Iteration   1: 80324,969 ns/op
-# Warmup Iteration   2: 83180,227 ns/op
-# Warmup Iteration   3: 92764,965 ns/op
-# Warmup Iteration   4: 93666,199 ns/op
-# Warmup Iteration   5: 106290,977 ns/op
-Iteration   1: 83031,062 ns/op
-Iteration   2: 78361,097 ns/op
-Iteration   3: 83890,745 ns/op
-Iteration   4: 83009,206 ns/op
-Iteration   5: 82352,792 ns/op
+# Warmup Iteration   1: 1921,108 ns/op
+# Warmup Iteration   2: 1824,576 ns/op
+# Warmup Iteration   3: 1860,563 ns/op
+# Warmup Iteration   4: 1823,912 ns/op
+# Warmup Iteration   5: 1928,252 ns/op
+Iteration   1: 1812,747 ns/op
+Iteration   2: 1831,303 ns/op
+Iteration   3: 1821,474 ns/op
+Iteration   4: 1844,444 ns/op
+Iteration   5: 1835,645 ns/op
 
 
 Result "benchmark.MyBenchmark.naive":
-  82128,980 ±(99.9%) 8378,889 ns/op [Average]
-  (min, avg, max) = (78361,097, 82128,980, 83890,745), stdev = 2175,971
-  CI (99.9%): [73750,091, 90507,870] (assumes normal distribution)
+  1829,123 ±(99.9%) 47,502 ns/op [Average]
+  (min, avg, max) = (1812,747, 1829,123, 1844,444), stdev = 12,336
+  CI (99.9%): [1781,621, 1876,624] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -40,26 +40,26 @@ Result "benchmark.MyBenchmark.naive":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 10, maxSize = 550)
+# Parameters: (count = 100, maxSize = 600)
 
-# Run progress: 4,17% complete, ETA 00:38:27
+# Run progress: 2,78% complete, ETA 00:58:31
 # Fork: 1 of 1
-# Warmup Iteration   1: 100066,507 ns/op
-# Warmup Iteration   2: 90457,698 ns/op
-# Warmup Iteration   3: 76952,653 ns/op
-# Warmup Iteration   4: 109524,421 ns/op
-# Warmup Iteration   5: 70339,542 ns/op
-Iteration   1: 78039,138 ns/op
-Iteration   2: 70734,273 ns/op
-Iteration   3: 70396,439 ns/op
-Iteration   4: 76785,697 ns/op
-Iteration   5: 76694,263 ns/op
+# Warmup Iteration   1: 1114,211 ns/op
+# Warmup Iteration   2: 1206,393 ns/op
+# Warmup Iteration   3: 1321,577 ns/op
+# Warmup Iteration   4: 1286,364 ns/op
+# Warmup Iteration   5: 1317,552 ns/op
+Iteration   1: 1300,380 ns/op
+Iteration   2: 1281,951 ns/op
+Iteration   3: 1316,722 ns/op
+Iteration   4: 1323,659 ns/op
+Iteration   5: 1299,056 ns/op
 
 
 Result "benchmark.MyBenchmark.naive":
-  74529,962 ±(99.9%) 14093,057 ns/op [Average]
-  (min, avg, max) = (70396,439, 74529,962, 78039,138), stdev = 3659,922
-  CI (99.9%): [60436,905, 88623,019] (assumes normal distribution)
+  1304,354 ±(99.9%) 63,020 ns/op [Average]
+  (min, avg, max) = (1281,951, 1304,354, 1323,659), stdev = 16,366
+  CI (99.9%): [1241,334, 1367,374] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -72,26 +72,26 @@ Result "benchmark.MyBenchmark.naive":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 100, maxSize = 250)
+# Parameters: (count = 316, maxSize = 100)
 
-# Run progress: 8,33% complete, ETA 00:36:47
+# Run progress: 5,56% complete, ETA 00:56:49
 # Fork: 1 of 1
-# Warmup Iteration   1: 1882,363 ns/op
-# Warmup Iteration   2: 1748,292 ns/op
-# Warmup Iteration   3: 1884,182 ns/op
-# Warmup Iteration   4: 1877,667 ns/op
-# Warmup Iteration   5: 1860,191 ns/op
-Iteration   1: 1861,008 ns/op
-Iteration   2: 1853,085 ns/op
-Iteration   3: 1848,387 ns/op
-Iteration   4: 1868,936 ns/op
-Iteration   5: 1967,692 ns/op
+# Warmup Iteration   1: 4399,946 ns/op
+# Warmup Iteration   2: 4387,549 ns/op
+# Warmup Iteration   3: 4539,929 ns/op
+# Warmup Iteration   4: 4427,544 ns/op
+# Warmup Iteration   5: 4451,902 ns/op
+Iteration   1: 4379,015 ns/op
+Iteration   2: 4360,513 ns/op
+Iteration   3: 4537,201 ns/op
+Iteration   4: 4399,461 ns/op
+Iteration   5: 4395,986 ns/op
 
 
 Result "benchmark.MyBenchmark.naive":
-  1879,822 ±(99.9%) 191,534 ns/op [Average]
-  (min, avg, max) = (1848,387, 1879,822, 1967,692), stdev = 49,741
-  CI (99.9%): [1688,288, 2071,356] (assumes normal distribution)
+  4414,435 ±(99.9%) 270,905 ns/op [Average]
+  (min, avg, max) = (4360,513, 4414,435, 4537,201), stdev = 70,353
+  CI (99.9%): [4143,530, 4685,340] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -104,26 +104,26 @@ Result "benchmark.MyBenchmark.naive":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 100, maxSize = 550)
+# Parameters: (count = 316, maxSize = 600)
 
-# Run progress: 12,50% complete, ETA 00:35:06
+# Run progress: 8,33% complete, ETA 00:55:09
 # Fork: 1 of 1
-# Warmup Iteration   1: 1852,334 ns/op
-# Warmup Iteration   2: 1756,503 ns/op
-# Warmup Iteration   3: 1842,738 ns/op
-# Warmup Iteration   4: 1862,789 ns/op
-# Warmup Iteration   5: 1842,153 ns/op
-Iteration   1: 1866,366 ns/op
-Iteration   2: 1894,687 ns/op
-Iteration   3: 1875,640 ns/op
-Iteration   4: 1900,897 ns/op
-Iteration   5: 1853,570 ns/op
+# Warmup Iteration   1: 3479,608 ns/op
+# Warmup Iteration   2: 3726,177 ns/op
+# Warmup Iteration   3: 3834,548 ns/op
+# Warmup Iteration   4: 3847,342 ns/op
+# Warmup Iteration   5: 3717,779 ns/op
+Iteration   1: 3704,537 ns/op
+Iteration   2: 3622,434 ns/op
+Iteration   3: 3737,397 ns/op
+Iteration   4: 3965,212 ns/op
+Iteration   5: 3775,189 ns/op
 
 
 Result "benchmark.MyBenchmark.naive":
-  1878,232 ±(99.9%) 75,559 ns/op [Average]
-  (min, avg, max) = (1853,570, 1878,232, 1900,897), stdev = 19,622
-  CI (99.9%): [1802,673, 1953,791] (assumes normal distribution)
+  3760,954 ±(99.9%) 490,295 ns/op [Average]
+  (min, avg, max) = (3622,434, 3760,954, 3965,212), stdev = 127,328
+  CI (99.9%): [3270,659, 4251,248] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -136,26 +136,26 @@ Result "benchmark.MyBenchmark.naive":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 1000, maxSize = 250)
+# Parameters: (count = 1000, maxSize = 100)
 
-# Run progress: 16,67% complete, ETA 00:33:26
+# Run progress: 11,11% complete, ETA 00:53:28
 # Fork: 1 of 1
-# Warmup Iteration   1: 11912,096 ns/op
-# Warmup Iteration   2: 11987,783 ns/op
-# Warmup Iteration   3: 12209,450 ns/op
-# Warmup Iteration   4: 11983,347 ns/op
-# Warmup Iteration   5: 11781,103 ns/op
-Iteration   1: 12056,289 ns/op
-Iteration   2: 11973,893 ns/op
-Iteration   3: 11827,209 ns/op
-Iteration   4: 11929,083 ns/op
-Iteration   5: 11809,354 ns/op
+# Warmup Iteration   1: 12956,704 ns/op
+# Warmup Iteration   2: 12890,935 ns/op
+# Warmup Iteration   3: 12842,376 ns/op
+# Warmup Iteration   4: 13023,875 ns/op
+# Warmup Iteration   5: 12850,607 ns/op
+Iteration   1: 13111,361 ns/op
+Iteration   2: 12909,502 ns/op
+Iteration   3: 13156,657 ns/op
+Iteration   4: 13071,479 ns/op
+Iteration   5: 13465,998 ns/op
 
 
 Result "benchmark.MyBenchmark.naive":
-  11919,166 ±(99.9%) 396,499 ns/op [Average]
-  (min, avg, max) = (11809,354, 11919,166, 12056,289), stdev = 102,970
-  CI (99.9%): [11522,667, 12315,665] (assumes normal distribution)
+  13142,999 ±(99.9%) 782,429 ns/op [Average]
+  (min, avg, max) = (12909,502, 13142,999, 13465,998), stdev = 203,194
+  CI (99.9%): [12360,571, 13925,428] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -168,26 +168,26 @@ Result "benchmark.MyBenchmark.naive":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 1000, maxSize = 550)
+# Parameters: (count = 1000, maxSize = 600)
 
-# Run progress: 20,83% complete, ETA 00:31:45
+# Run progress: 13,89% complete, ETA 00:51:48
 # Fork: 1 of 1
-# Warmup Iteration   1: 11622,364 ns/op
-# Warmup Iteration   2: 11747,807 ns/op
-# Warmup Iteration   3: 11961,766 ns/op
-# Warmup Iteration   4: 11859,666 ns/op
-# Warmup Iteration   5: 11833,150 ns/op
-Iteration   1: 11826,276 ns/op
-Iteration   2: 11873,498 ns/op
-Iteration   3: 11953,540 ns/op
-Iteration   4: 11961,161 ns/op
-Iteration   5: 11917,041 ns/op
+# Warmup Iteration   1: 12280,448 ns/op
+# Warmup Iteration   2: 11600,664 ns/op
+# Warmup Iteration   3: 12270,925 ns/op
+# Warmup Iteration   4: 12182,759 ns/op
+# Warmup Iteration   5: 12001,488 ns/op
+Iteration   1: 12451,063 ns/op
+Iteration   2: 12413,881 ns/op
+Iteration   3: 12350,477 ns/op
+Iteration   4: 11894,460 ns/op
+Iteration   5: 12253,169 ns/op
 
 
 Result "benchmark.MyBenchmark.naive":
-  11906,303 ±(99.9%) 218,136 ns/op [Average]
-  (min, avg, max) = (11826,276, 11906,303, 11961,161), stdev = 56,649
-  CI (99.9%): [11688,167, 12124,439] (assumes normal distribution)
+  12272,610 ±(99.9%) 863,699 ns/op [Average]
+  (min, avg, max) = (11894,460, 12272,610, 12451,063), stdev = 224,300
+  CI (99.9%): [11408,911, 13136,309] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -200,33 +200,26 @@ Result "benchmark.MyBenchmark.naive":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 10000, maxSize = 250)
+# Parameters: (count = 3162, maxSize = 100)
 
-# Run progress: 25,00% complete, ETA 00:30:05
+# Run progress: 16,67% complete, ETA 00:50:08
 # Fork: 1 of 1
-# Warmup Iteration   1: <failure>
-
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at naive.Naive.solve(Naive.java:28)
-	at benchmark.MyBenchmark.naive(MyBenchmark.java:58)
-	at benchmark.generated.MyBenchmark_naive_jmhTest.naive_avgt_jmhStub(MyBenchmark_naive_jmhTest.java:193)
-	at benchmark.generated.MyBenchmark_naive_jmhTest.naive_AverageTime(MyBenchmark_naive_jmhTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+# Warmup Iteration   1: 39856,842 ns/op
+# Warmup Iteration   2: 38742,777 ns/op
+# Warmup Iteration   3: 39754,636 ns/op
+# Warmup Iteration   4: 39461,944 ns/op
+# Warmup Iteration   5: 39793,024 ns/op
+Iteration   1: 41848,374 ns/op
+Iteration   2: 41276,569 ns/op
+Iteration   3: 39740,068 ns/op
+Iteration   4: 39455,256 ns/op
+Iteration   5: 39220,551 ns/op
 
 
+Result "benchmark.MyBenchmark.naive":
+  40308,164 ±(99.9%) 4532,954 ns/op [Average]
+  (min, avg, max) = (39220,551, 40308,164, 41848,374), stdev = 1177,194
+  CI (99.9%): [35775,210, 44841,118] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -239,33 +232,154 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naive
-# Parameters: (count = 10000, maxSize = 550)
+# Parameters: (count = 3162, maxSize = 600)
 
-# Run progress: 29,17% complete, ETA 00:24:21
+# Run progress: 19,44% complete, ETA 00:48:27
 # Fork: 1 of 1
-# Warmup Iteration   1: <failure>
-
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at naive.Naive.solve(Naive.java:28)
-	at benchmark.MyBenchmark.naive(MyBenchmark.java:58)
-	at benchmark.generated.MyBenchmark_naive_jmhTest.naive_avgt_jmhStub(MyBenchmark_naive_jmhTest.java:193)
-	at benchmark.generated.MyBenchmark_naive_jmhTest.naive_AverageTime(MyBenchmark_naive_jmhTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+# Warmup Iteration   1: 36460,864 ns/op
+# Warmup Iteration   2: 36113,969 ns/op
+# Warmup Iteration   3: 37849,859 ns/op
+# Warmup Iteration   4: 37193,927 ns/op
+# Warmup Iteration   5: 39014,658 ns/op
+Iteration   1: 37322,920 ns/op
+Iteration   2: 36112,829 ns/op
+Iteration   3: 35520,142 ns/op
+Iteration   4: 37732,809 ns/op
+Iteration   5: 37508,473 ns/op
 
 
+Result "benchmark.MyBenchmark.naive":
+  36839,435 ±(99.9%) 3727,364 ns/op [Average]
+  (min, avg, max) = (35520,142, 36839,435, 37732,809), stdev = 967,984
+  CI (99.9%): [33112,071, 40566,798] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naive
+# Parameters: (count = 10000, maxSize = 100)
+
+# Run progress: 22,22% complete, ETA 00:46:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 120786,216 ns/op
+# Warmup Iteration   2: 124624,340 ns/op
+# Warmup Iteration   3: 124044,384 ns/op
+# Warmup Iteration   4: 123301,230 ns/op
+# Warmup Iteration   5: 122841,267 ns/op
+Iteration   1: 123234,148 ns/op
+Iteration   2: 124560,316 ns/op
+Iteration   3: 125613,921 ns/op
+Iteration   4: 125510,897 ns/op
+Iteration   5: 125504,842 ns/op
+
+
+Result "benchmark.MyBenchmark.naive":
+  124884,825 ±(99.9%) 3916,508 ns/op [Average]
+  (min, avg, max) = (123234,148, 124884,825, 125613,921), stdev = 1017,105
+  CI (99.9%): [120968,316, 128801,333] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naive
+# Parameters: (count = 10000, maxSize = 600)
+
+# Run progress: 25,00% complete, ETA 00:45:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 126126,126 ns/op
+# Warmup Iteration   2: 126947,429 ns/op
+# Warmup Iteration   3: 127482,236 ns/op
+# Warmup Iteration   4: 128278,922 ns/op
+# Warmup Iteration   5: 126777,961 ns/op
+Iteration   1: 128426,256 ns/op
+Iteration   2: 124408,027 ns/op
+Iteration   3: 125043,859 ns/op
+Iteration   4: 123644,184 ns/op
+Iteration   5: 124676,649 ns/op
+
+
+Result "benchmark.MyBenchmark.naive":
+  125239,795 ±(99.9%) 7138,472 ns/op [Average]
+  (min, avg, max) = (123644,184, 125239,795, 128426,256), stdev = 1853,839
+  CI (99.9%): [118101,323, 132378,267] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naive
+# Parameters: (count = 31623, maxSize = 100)
+
+# Run progress: 27,78% complete, ETA 00:43:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 385643,603 ns/op
+# Warmup Iteration   2: 407705,839 ns/op
+# Warmup Iteration   3: 386716,115 ns/op
+# Warmup Iteration   4: 395050,267 ns/op
+# Warmup Iteration   5: 402574,682 ns/op
+Iteration   1: 422416,807 ns/op
+Iteration   2: 412296,910 ns/op
+Iteration   3: 397551,957 ns/op
+Iteration   4: 411686,352 ns/op
+Iteration   5: 412553,548 ns/op
+
+
+Result "benchmark.MyBenchmark.naive":
+  411301,115 ±(99.9%) 34187,699 ns/op [Average]
+  (min, avg, max) = (397551,957, 411301,115, 422416,807), stdev = 8878,437
+  CI (99.9%): [377113,416, 445488,814] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naive
+# Parameters: (count = 31623, maxSize = 600)
+
+# Run progress: 30,56% complete, ETA 00:41:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 401445,609 ns/op
+# Warmup Iteration   2: 392231,409 ns/op
+# Warmup Iteration   3: 392495,170 ns/op
+# Warmup Iteration   4: 393056,094 ns/op
+# Warmup Iteration   5: 399719,218 ns/op
+Iteration   1: 389451,609 ns/op
+Iteration   2: 399419,249 ns/op
+Iteration   3: 400314,093 ns/op
+Iteration   4: 402636,427 ns/op
+Iteration   5: 395432,918 ns/op
+
+
+Result "benchmark.MyBenchmark.naive":
+  397450,859 ±(99.9%) 19917,813 ns/op [Average]
+  (min, avg, max) = (389451,609, 397450,859, 402636,427), stdev = 5172,593
+  CI (99.9%): [377533,046, 417368,673] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -278,26 +392,26 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 10, maxSize = 250)
+# Parameters: (count = 100, maxSize = 100)
 
-# Run progress: 33,33% complete, ETA 00:20:04
+# Run progress: 33,33% complete, ETA 00:40:06
 # Fork: 1 of 1
-# Warmup Iteration   1: 194654,092 ns/op
-# Warmup Iteration   2: 189307,103 ns/op
-# Warmup Iteration   3: 175581,777 ns/op
-# Warmup Iteration   4: 257874,971 ns/op
-# Warmup Iteration   5: 195265,553 ns/op
-Iteration   1: 175152,629 ns/op
-Iteration   2: 175073,937 ns/op
-Iteration   3: 195132,389 ns/op
-Iteration   4: 220368,921 ns/op
-Iteration   5: 220922,148 ns/op
+# Warmup Iteration   1: 21453,622 ns/op
+# Warmup Iteration   2: 21995,115 ns/op
+# Warmup Iteration   3: 21922,371 ns/op
+# Warmup Iteration   4: 21819,816 ns/op
+# Warmup Iteration   5: 21748,009 ns/op
+Iteration   1: 21652,163 ns/op
+Iteration   2: 22464,538 ns/op
+Iteration   3: 22448,135 ns/op
+Iteration   4: 22018,926 ns/op
+Iteration   5: 23292,230 ns/op
 
 
 Result "benchmark.MyBenchmark.naiveWithSorting":
-  197330,005 ±(99.9%) 87795,081 ns/op [Average]
-  (min, avg, max) = (175073,937, 197330,005, 220922,148), stdev = 22800,104
-  CI (99.9%): [109534,924, 285125,086] (assumes normal distribution)
+  22375,198 ±(99.9%) 2361,137 ns/op [Average]
+  (min, avg, max) = (21652,163, 22375,198, 23292,230), stdev = 613,180
+  CI (99.9%): [20014,061, 24736,336] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -310,26 +424,26 @@ Result "benchmark.MyBenchmark.naiveWithSorting":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 10, maxSize = 550)
+# Parameters: (count = 100, maxSize = 600)
 
-# Run progress: 37,50% complete, ETA 00:19:30
+# Run progress: 36,11% complete, ETA 00:38:26
 # Fork: 1 of 1
-# Warmup Iteration   1: 220040,402 ns/op
-# Warmup Iteration   2: 191362,799 ns/op
-# Warmup Iteration   3: 223017,594 ns/op
-# Warmup Iteration   4: 215330,740 ns/op
-# Warmup Iteration   5: 193084,479 ns/op
-Iteration   1: 214088,426 ns/op
-Iteration   2: 193383,970 ns/op
-Iteration   3: 176059,611 ns/op
-Iteration   4: 253577,776 ns/op
-Iteration   5: 192202,603 ns/op
+# Warmup Iteration   1: 1237,361 ns/op
+# Warmup Iteration   2: 1647,293 ns/op
+# Warmup Iteration   3: 1732,839 ns/op
+# Warmup Iteration   4: 1740,402 ns/op
+# Warmup Iteration   5: 1729,906 ns/op
+Iteration   1: 1745,520 ns/op
+Iteration   2: 1737,626 ns/op
+Iteration   3: 1674,779 ns/op
+Iteration   4: 1722,821 ns/op
+Iteration   5: 1720,287 ns/op
 
 
 Result "benchmark.MyBenchmark.naiveWithSorting":
-  205862,477 ±(99.9%) 115116,417 ns/op [Average]
-  (min, avg, max) = (176059,611, 205862,477, 253577,776), stdev = 29895,368
-  CI (99.9%): [90746,060, 320978,894] (assumes normal distribution)
+  1720,207 ±(99.9%) 105,712 ns/op [Average]
+  (min, avg, max) = (1674,779, 1720,207, 1745,520), stdev = 27,453
+  CI (99.9%): [1614,495, 1825,919] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -342,26 +456,26 @@ Result "benchmark.MyBenchmark.naiveWithSorting":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 100, maxSize = 250)
+# Parameters: (count = 316, maxSize = 100)
 
-# Run progress: 41,67% complete, ETA 00:18:43
+# Run progress: 38,89% complete, ETA 00:36:45
 # Fork: 1 of 1
-# Warmup Iteration   1: 21297,015 ns/op
-# Warmup Iteration   2: 21602,978 ns/op
-# Warmup Iteration   3: 25096,930 ns/op
-# Warmup Iteration   4: 21671,692 ns/op
-# Warmup Iteration   5: 21414,242 ns/op
-Iteration   1: 21386,818 ns/op
-Iteration   2: 21554,411 ns/op
-Iteration   3: 22056,308 ns/op
-Iteration   4: 21802,766 ns/op
-Iteration   5: 23758,730 ns/op
+# Warmup Iteration   1: 70846,150 ns/op
+# Warmup Iteration   2: 68545,716 ns/op
+# Warmup Iteration   3: 69824,714 ns/op
+# Warmup Iteration   4: 67664,565 ns/op
+# Warmup Iteration   5: 67914,826 ns/op
+Iteration   1: 68418,389 ns/op
+Iteration   2: 66991,301 ns/op
+Iteration   3: 68032,991 ns/op
+Iteration   4: 68459,640 ns/op
+Iteration   5: 69704,734 ns/op
 
 
 Result "benchmark.MyBenchmark.naiveWithSorting":
-  22111,806 ±(99.9%) 3676,932 ns/op [Average]
-  (min, avg, max) = (21386,818, 22111,806, 23758,730), stdev = 954,888
-  CI (99.9%): [18434,875, 25788,738] (assumes normal distribution)
+  68321,411 ±(99.9%) 3750,413 ns/op [Average]
+  (min, avg, max) = (66991,301, 68321,411, 69704,734), stdev = 973,970
+  CI (99.9%): [64570,998, 72071,824] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -374,26 +488,26 @@ Result "benchmark.MyBenchmark.naiveWithSorting":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 100, maxSize = 550)
+# Parameters: (count = 316, maxSize = 600)
 
-# Run progress: 45,83% complete, ETA 00:17:47
+# Run progress: 41,67% complete, ETA 00:35:05
 # Fork: 1 of 1
-# Warmup Iteration   1: 21335,219 ns/op
-# Warmup Iteration   2: 33714,337 ns/op
-# Warmup Iteration   3: 34671,372 ns/op
-# Warmup Iteration   4: 33430,554 ns/op
-# Warmup Iteration   5: 33842,169 ns/op
-Iteration   1: 33831,509 ns/op
-Iteration   2: 33303,670 ns/op
-Iteration   3: 34130,482 ns/op
-Iteration   4: 33977,642 ns/op
-Iteration   5: 33845,136 ns/op
+# Warmup Iteration   1: 3949,721 ns/op
+# Warmup Iteration   2: 4879,326 ns/op
+# Warmup Iteration   3: 4967,672 ns/op
+# Warmup Iteration   4: 4979,111 ns/op
+# Warmup Iteration   5: 4920,058 ns/op
+Iteration   1: 4953,657 ns/op
+Iteration   2: 4998,889 ns/op
+Iteration   3: 5102,002 ns/op
+Iteration   4: 5036,008 ns/op
+Iteration   5: 4941,902 ns/op
 
 
 Result "benchmark.MyBenchmark.naiveWithSorting":
-  33817,688 ±(99.9%) 1200,179 ns/op [Average]
-  (min, avg, max) = (33303,670, 33817,688, 34130,482), stdev = 311,683
-  CI (99.9%): [32617,508, 35017,867] (assumes normal distribution)
+  5006,492 ±(99.9%) 251,138 ns/op [Average]
+  (min, avg, max) = (4941,902, 5006,492, 5102,002), stdev = 65,220
+  CI (99.9%): [4755,353, 5257,630] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -406,26 +520,26 @@ Result "benchmark.MyBenchmark.naiveWithSorting":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 1000, maxSize = 250)
+# Parameters: (count = 1000, maxSize = 100)
 
-# Run progress: 50,00% complete, ETA 00:16:43
+# Run progress: 44,44% complete, ETA 00:33:25
 # Fork: 1 of 1
-# Warmup Iteration   1: 12039,185 ns/op
-# Warmup Iteration   2: 13146,375 ns/op
-# Warmup Iteration   3: 13212,068 ns/op
-# Warmup Iteration   4: 13326,692 ns/op
-# Warmup Iteration   5: 13255,566 ns/op
-Iteration   1: 13449,828 ns/op
-Iteration   2: 13204,884 ns/op
-Iteration   3: 13487,952 ns/op
-Iteration   4: 13670,864 ns/op
-Iteration   5: 13416,062 ns/op
+# Warmup Iteration   1: 218356,272 ns/op
+# Warmup Iteration   2: 223094,449 ns/op
+# Warmup Iteration   3: 230721,384 ns/op
+# Warmup Iteration   4: 238807,943 ns/op
+# Warmup Iteration   5: 236697,461 ns/op
+Iteration   1: 241214,856 ns/op
+Iteration   2: 238808,969 ns/op
+Iteration   3: 238019,098 ns/op
+Iteration   4: 228154,776 ns/op
+Iteration   5: 217230,758 ns/op
 
 
 Result "benchmark.MyBenchmark.naiveWithSorting":
-  13445,918 ±(99.9%) 642,527 ns/op [Average]
-  (min, avg, max) = (13204,884, 13445,918, 13670,864), stdev = 166,862
-  CI (99.9%): [12803,391, 14088,445] (assumes normal distribution)
+  232685,692 ±(99.9%) 38413,459 ns/op [Average]
+  (min, avg, max) = (217230,758, 232685,692, 241214,856), stdev = 9975,853
+  CI (99.9%): [194272,233, 271099,150] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -438,26 +552,26 @@ Result "benchmark.MyBenchmark.naiveWithSorting":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 1000, maxSize = 550)
+# Parameters: (count = 1000, maxSize = 600)
 
-# Run progress: 54,17% complete, ETA 00:15:33
+# Run progress: 47,22% complete, ETA 00:31:44
 # Fork: 1 of 1
-# Warmup Iteration   1: 12390,314 ns/op
-# Warmup Iteration   2: 13252,091 ns/op
-# Warmup Iteration   3: 14702,859 ns/op
-# Warmup Iteration   4: 14797,726 ns/op
-# Warmup Iteration   5: 14788,803 ns/op
-Iteration   1: 14265,603 ns/op
-Iteration   2: 14425,184 ns/op
-Iteration   3: 14384,832 ns/op
-Iteration   4: 14295,795 ns/op
-Iteration   5: 14125,568 ns/op
+# Warmup Iteration   1: 12185,235 ns/op
+# Warmup Iteration   2: 13803,235 ns/op
+# Warmup Iteration   3: 15080,061 ns/op
+# Warmup Iteration   4: 15022,694 ns/op
+# Warmup Iteration   5: 14823,411 ns/op
+Iteration   1: 15278,951 ns/op
+Iteration   2: 14633,356 ns/op
+Iteration   3: 14834,211 ns/op
+Iteration   4: 14239,763 ns/op
+Iteration   5: 14484,281 ns/op
 
 
 Result "benchmark.MyBenchmark.naiveWithSorting":
-  14299,396 ±(99.9%) 449,442 ns/op [Average]
-  (min, avg, max) = (14125,568, 14299,396, 14425,184), stdev = 116,719
-  CI (99.9%): [13849,954, 14748,839] (assumes normal distribution)
+  14694,112 ±(99.9%) 1510,879 ns/op [Average]
+  (min, avg, max) = (14239,763, 14694,112, 15278,951), stdev = 392,370
+  CI (99.9%): [13183,234, 16204,991] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -470,32 +584,26 @@ Result "benchmark.MyBenchmark.naiveWithSorting":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 10000, maxSize = 250)
+# Parameters: (count = 3162, maxSize = 100)
 
-# Run progress: 58,33% complete, ETA 00:14:19
+# Run progress: 50,00% complete, ETA 00:30:04
 # Fork: 1 of 1
-# Warmup Iteration   1: <failure>
-
-java.lang.NullPointerException
-	at naive.Sector.fit(Sector.java:67)
-	at naive.NaiveWithSorting.solve(NaiveWithSorting.java:22)
-	at benchmark.MyBenchmark.naiveWithSorting(MyBenchmark.java:63)
-	at benchmark.generated.MyBenchmark_naiveWithSorting_jmhTest.naiveWithSorting_avgt_jmhStub(MyBenchmark_naiveWithSorting_jmhTest.java:193)
-	at benchmark.generated.MyBenchmark_naiveWithSorting_jmhTest.naiveWithSorting_AverageTime(MyBenchmark_naiveWithSorting_jmhTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+# Warmup Iteration   1: 737466,581 ns/op
+# Warmup Iteration   2: 741335,262 ns/op
+# Warmup Iteration   3: 735312,226 ns/op
+# Warmup Iteration   4: 722638,190 ns/op
+# Warmup Iteration   5: 728043,879 ns/op
+Iteration   1: 724884,641 ns/op
+Iteration   2: 727194,553 ns/op
+Iteration   3: 727624,717 ns/op
+Iteration   4: 705649,642 ns/op
+Iteration   5: 713720,856 ns/op
 
 
+Result "benchmark.MyBenchmark.naiveWithSorting":
+  719814,882 ±(99.9%) 37479,382 ns/op [Average]
+  (min, avg, max) = (705649,642, 719814,882, 727624,717), stdev = 9733,277
+  CI (99.9%): [682335,500, 757294,264] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -508,32 +616,154 @@ java.lang.NullPointerException
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.naiveWithSorting
-# Parameters: (count = 10000, maxSize = 550)
+# Parameters: (count = 3162, maxSize = 600)
 
-# Run progress: 62,50% complete, ETA 00:12:02
+# Run progress: 52,78% complete, ETA 00:28:24
 # Fork: 1 of 1
-# Warmup Iteration   1: <failure>
-
-java.lang.NullPointerException
-	at naive.Sector.fit(Sector.java:67)
-	at naive.NaiveWithSorting.solve(NaiveWithSorting.java:22)
-	at benchmark.MyBenchmark.naiveWithSorting(MyBenchmark.java:63)
-	at benchmark.generated.MyBenchmark_naiveWithSorting_jmhTest.naiveWithSorting_avgt_jmhStub(MyBenchmark_naiveWithSorting_jmhTest.java:193)
-	at benchmark.generated.MyBenchmark_naiveWithSorting_jmhTest.naiveWithSorting_AverageTime(MyBenchmark_naiveWithSorting_jmhTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+# Warmup Iteration   1: 37633,414 ns/op
+# Warmup Iteration   2: 40820,688 ns/op
+# Warmup Iteration   3: 40801,680 ns/op
+# Warmup Iteration   4: 39891,019 ns/op
+# Warmup Iteration   5: 39568,108 ns/op
+Iteration   1: 41806,177 ns/op
+Iteration   2: 41123,208 ns/op
+Iteration   3: 40580,006 ns/op
+Iteration   4: 40205,848 ns/op
+Iteration   5: 40367,546 ns/op
 
 
+Result "benchmark.MyBenchmark.naiveWithSorting":
+  40816,557 ±(99.9%) 2513,202 ns/op [Average]
+  (min, avg, max) = (40205,848, 40816,557, 41806,177), stdev = 652,670
+  CI (99.9%): [38303,356, 43329,759] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naiveWithSorting
+# Parameters: (count = 10000, maxSize = 100)
+
+# Run progress: 55,56% complete, ETA 00:26:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 2230898,128 ns/op
+# Warmup Iteration   2: 2225324,476 ns/op
+# Warmup Iteration   3: 2220453,777 ns/op
+# Warmup Iteration   4: 2224081,323 ns/op
+# Warmup Iteration   5: 2209538,121 ns/op
+Iteration   1: 2236801,686 ns/op
+Iteration   2: 2296408,064 ns/op
+Iteration   3: 2309031,199 ns/op
+Iteration   4: 2250850,410 ns/op
+Iteration   5: 2258319,034 ns/op
+
+
+Result "benchmark.MyBenchmark.naiveWithSorting":
+  2270282,079 ±(99.9%) 119085,519 ns/op [Average]
+  (min, avg, max) = (2236801,686, 2270282,079, 2309031,199), stdev = 30926,131
+  CI (99.9%): [2151196,559, 2389367,598] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naiveWithSorting
+# Parameters: (count = 10000, maxSize = 600)
+
+# Run progress: 58,33% complete, ETA 00:25:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 119993,928 ns/op
+# Warmup Iteration   2: 118881,380 ns/op
+# Warmup Iteration   3: 126785,810 ns/op
+# Warmup Iteration   4: 122028,915 ns/op
+# Warmup Iteration   5: 119341,771 ns/op
+Iteration   1: 120927,785 ns/op
+Iteration   2: 128718,810 ns/op
+Iteration   3: 122002,865 ns/op
+Iteration   4: 123466,962 ns/op
+Iteration   5: 123065,213 ns/op
+
+
+Result "benchmark.MyBenchmark.naiveWithSorting":
+  123636,327 ±(99.9%) 11582,519 ns/op [Average]
+  (min, avg, max) = (120927,785, 123636,327, 128718,810), stdev = 3007,943
+  CI (99.9%): [112053,808, 135218,846] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naiveWithSorting
+# Parameters: (count = 31623, maxSize = 100)
+
+# Run progress: 61,11% complete, ETA 00:23:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 7321755,668 ns/op
+# Warmup Iteration   2: 7232448,826 ns/op
+# Warmup Iteration   3: 7344843,434 ns/op
+# Warmup Iteration   4: 7647113,732 ns/op
+# Warmup Iteration   5: 7476227,970 ns/op
+Iteration   1: 7292976,138 ns/op
+Iteration   2: 7280210,493 ns/op
+Iteration   3: 7293711,216 ns/op
+Iteration   4: 7255000,832 ns/op
+Iteration   5: 8057461,084 ns/op
+
+
+Result "benchmark.MyBenchmark.naiveWithSorting":
+  7435871,953 ±(99.9%) 1339374,948 ns/op [Average]
+  (min, avg, max) = (7255000,832, 7435871,953, 8057461,084), stdev = 347831,421
+  CI (99.9%): [6096497,005, 8775246,901] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.naiveWithSorting
+# Parameters: (count = 31623, maxSize = 600)
+
+# Run progress: 63,89% complete, ETA 00:21:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 455155,525 ns/op
+# Warmup Iteration   2: 428001,794 ns/op
+# Warmup Iteration   3: 435689,912 ns/op
+# Warmup Iteration   4: 426916,557 ns/op
+# Warmup Iteration   5: 424960,363 ns/op
+Iteration   1: 445954,172 ns/op
+Iteration   2: 423988,015 ns/op
+Iteration   3: 453208,912 ns/op
+Iteration   4: 452235,702 ns/op
+Iteration   5: 428060,299 ns/op
+
+
+Result "benchmark.MyBenchmark.naiveWithSorting":
+  440689,420 ±(99.9%) 52944,728 ns/op [Average]
+  (min, avg, max) = (423988,015, 440689,420, 453208,912), stdev = 13749,578
+  CI (99.9%): [387744,692, 493634,147] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -546,26 +776,26 @@ java.lang.NullPointerException
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 10, maxSize = 250)
+# Parameters: (count = 100, maxSize = 100)
 
-# Run progress: 66,67% complete, ETA 00:10:02
+# Run progress: 66,67% complete, ETA 00:20:03
 # Fork: 1 of 1
-# Warmup Iteration   1: 2159,143 ns/op
-# Warmup Iteration   2: 2370,826 ns/op
-# Warmup Iteration   3: 2538,814 ns/op
-# Warmup Iteration   4: 2512,826 ns/op
-# Warmup Iteration   5: 2332,220 ns/op
-Iteration   1: 2450,116 ns/op
-Iteration   2: 2180,119 ns/op
-Iteration   3: 2285,037 ns/op
-Iteration   4: 1922,127 ns/op
-Iteration   5: 2438,282 ns/op
+# Warmup Iteration   1: 69778,072 ns/op
+# Warmup Iteration   2: 62160,988 ns/op
+# Warmup Iteration   3: 68926,440 ns/op
+# Warmup Iteration   4: 70304,220 ns/op
+# Warmup Iteration   5: 69892,311 ns/op
+Iteration   1: 74716,455 ns/op
+Iteration   2: 74296,869 ns/op
+Iteration   3: 70510,078 ns/op
+Iteration   4: 77675,720 ns/op
+Iteration   5: 73128,250 ns/op
 
 
 Result "benchmark.MyBenchmark.shelf":
-  2255,136 ±(99.9%) 836,964 ns/op [Average]
-  (min, avg, max) = (1922,127, 2255,136, 2450,116), stdev = 217,357
-  CI (99.9%): [1418,173, 3092,100] (assumes normal distribution)
+  74065,474 ±(99.9%) 10009,902 ns/op [Average]
+  (min, avg, max) = (70510,078, 74065,474, 77675,720), stdev = 2599,540
+  CI (99.9%): [64055,572, 84075,377] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -578,26 +808,26 @@ Result "benchmark.MyBenchmark.shelf":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 10, maxSize = 550)
+# Parameters: (count = 100, maxSize = 600)
 
-# Run progress: 70,83% complete, ETA 00:08:57
+# Run progress: 69,44% complete, ETA 00:18:22
 # Fork: 1 of 1
-# Warmup Iteration   1: 2576,943 ns/op
-# Warmup Iteration   2: 2810,708 ns/op
-# Warmup Iteration   3: 3135,135 ns/op
-# Warmup Iteration   4: 2845,918 ns/op
-# Warmup Iteration   5: 2614,213 ns/op
-Iteration   1: 2914,177 ns/op
-Iteration   2: 2820,079 ns/op
-Iteration   3: 2500,082 ns/op
-Iteration   4: 2942,832 ns/op
-Iteration   5: 2784,687 ns/op
+# Warmup Iteration   1: 111401,552 ns/op
+# Warmup Iteration   2: 108272,738 ns/op
+# Warmup Iteration   3: 118532,580 ns/op
+# Warmup Iteration   4: 120056,147 ns/op
+# Warmup Iteration   5: 109191,450 ns/op
+Iteration   1: 103573,278 ns/op
+Iteration   2: 113600,034 ns/op
+Iteration   3: 116946,664 ns/op
+Iteration   4: 110120,125 ns/op
+Iteration   5: 113221,665 ns/op
 
 
 Result "benchmark.MyBenchmark.shelf":
-  2792,372 ±(99.9%) 677,251 ns/op [Average]
-  (min, avg, max) = (2500,082, 2792,372, 2942,832), stdev = 175,880
-  CI (99.9%): [2115,120, 3469,623] (assumes normal distribution)
+  111492,353 ±(99.9%) 19423,541 ns/op [Average]
+  (min, avg, max) = (103573,278, 111492,353, 116946,664), stdev = 5044,232
+  CI (99.9%): [92068,812, 130915,894] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -610,26 +840,26 @@ Result "benchmark.MyBenchmark.shelf":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 100, maxSize = 250)
+# Parameters: (count = 316, maxSize = 100)
 
-# Run progress: 75,00% complete, ETA 00:07:48
+# Run progress: 72,22% complete, ETA 00:16:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 76974,433 ns/op
-# Warmup Iteration   2: 77071,853 ns/op
-# Warmup Iteration   3: 74233,142 ns/op
-# Warmup Iteration   4: 70890,086 ns/op
-# Warmup Iteration   5: 75354,731 ns/op
-Iteration   1: 71583,715 ns/op
-Iteration   2: 71375,682 ns/op
-Iteration   3: 74145,107 ns/op
-Iteration   4: 71583,580 ns/op
-Iteration   5: 74941,597 ns/op
+# Warmup Iteration   1: 467393,151 ns/op
+# Warmup Iteration   2: 473125,754 ns/op
+# Warmup Iteration   3: 496536,181 ns/op
+# Warmup Iteration   4: 457520,980 ns/op
+# Warmup Iteration   5: 422791,665 ns/op
+Iteration   1: 435698,874 ns/op
+Iteration   2: 480629,806 ns/op
+Iteration   3: 469459,299 ns/op
+Iteration   4: 478733,413 ns/op
+Iteration   5: 449455,558 ns/op
 
 
 Result "benchmark.MyBenchmark.shelf":
-  72725,936 ±(99.9%) 6488,087 ns/op [Average]
-  (min, avg, max) = (71375,682, 72725,936, 74941,597), stdev = 1684,936
-  CI (99.9%): [66237,849, 79214,023] (assumes normal distribution)
+  462795,390 ±(99.9%) 75276,568 ns/op [Average]
+  (min, avg, max) = (435698,874, 462795,390, 480629,806), stdev = 19549,086
+  CI (99.9%): [387518,822, 538071,958] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -642,26 +872,26 @@ Result "benchmark.MyBenchmark.shelf":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 100, maxSize = 550)
+# Parameters: (count = 316, maxSize = 600)
 
-# Run progress: 79,17% complete, ETA 00:06:36
+# Run progress: 75,00% complete, ETA 00:15:02
 # Fork: 1 of 1
-# Warmup Iteration   1: 76296,873 ns/op
-# Warmup Iteration   2: 75781,555 ns/op
-# Warmup Iteration   3: 77302,003 ns/op
-# Warmup Iteration   4: 76377,775 ns/op
-# Warmup Iteration   5: 75670,394 ns/op
-Iteration   1: 78214,745 ns/op
-Iteration   2: 78495,088 ns/op
-Iteration   3: 70913,735 ns/op
-Iteration   4: 70127,264 ns/op
-Iteration   5: 76304,274 ns/op
+# Warmup Iteration   1: 1034425,727 ns/op
+# Warmup Iteration   2: 1004332,747 ns/op
+# Warmup Iteration   3: 970030,112 ns/op
+# Warmup Iteration   4: 1018299,806 ns/op
+# Warmup Iteration   5: 953900,687 ns/op
+Iteration   1: 909804,398 ns/op
+Iteration   2: 1019005,664 ns/op
+Iteration   3: 995882,649 ns/op
+Iteration   4: 874326,799 ns/op
+Iteration   5: 912581,555 ns/op
 
 
 Result "benchmark.MyBenchmark.shelf":
-  74811,021 ±(99.9%) 15464,292 ns/op [Average]
-  (min, avg, max) = (70127,264, 74811,021, 78495,088), stdev = 4016,028
-  CI (99.9%): [59346,729, 90275,313] (assumes normal distribution)
+  942320,213 ±(99.9%) 238260,932 ns/op [Average]
+  (min, avg, max) = (874326,799, 942320,213, 1019005,664), stdev = 61875,608
+  CI (99.9%): [704059,280, 1180581,145] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -674,26 +904,26 @@ Result "benchmark.MyBenchmark.shelf":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 1000, maxSize = 250)
+# Parameters: (count = 1000, maxSize = 100)
 
-# Run progress: 83,33% complete, ETA 00:05:21
+# Run progress: 77,78% complete, ETA 00:13:22
 # Fork: 1 of 1
-# Warmup Iteration   1: 18957154,589 ns/op
-# Warmup Iteration   2: 18595962,572 ns/op
-# Warmup Iteration   3: 20381859,578 ns/op
-# Warmup Iteration   4: 20220785,388 ns/op
-# Warmup Iteration   5: 19302943,289 ns/op
-Iteration   1: 19302110,131 ns/op
-Iteration   2: 18357208,343 ns/op
-Iteration   3: 19098103,286 ns/op
-Iteration   4: 19076834,284 ns/op
-Iteration   5: 19027121,306 ns/op
+# Warmup Iteration   1: 3628488,050 ns/op
+# Warmup Iteration   2: 3674896,135 ns/op
+# Warmup Iteration   3: 3607557,617 ns/op
+# Warmup Iteration   4: 3658697,037 ns/op
+# Warmup Iteration   5: 3774557,408 ns/op
+Iteration   1: 3552004,036 ns/op
+Iteration   2: 3838999,770 ns/op
+Iteration   3: 3708727,680 ns/op
+Iteration   4: 3721061,879 ns/op
+Iteration   5: 3875529,644 ns/op
 
 
 Result "benchmark.MyBenchmark.shelf":
-  18972275,470 ±(99.9%) 1384186,958 ns/op [Average]
-  (min, avg, max) = (18357208,343, 18972275,470, 19302110,131), stdev = 359468,957
-  CI (99.9%): [17588088,512, 20356462,428] (assumes normal distribution)
+  3739264,602 ±(99.9%) 490279,477 ns/op [Average]
+  (min, avg, max) = (3552004,036, 3739264,602, 3875529,644), stdev = 127324,023
+  CI (99.9%): [3248985,125, 4229544,079] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -706,26 +936,26 @@ Result "benchmark.MyBenchmark.shelf":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 1000, maxSize = 550)
+# Parameters: (count = 1000, maxSize = 600)
 
-# Run progress: 87,50% complete, ETA 00:04:03
+# Run progress: 80,56% complete, ETA 00:11:41
 # Fork: 1 of 1
-# Warmup Iteration   1: 18140364,739 ns/op
-# Warmup Iteration   2: 18595307,303 ns/op
-# Warmup Iteration   3: 18789689,734 ns/op
-# Warmup Iteration   4: 18091217,172 ns/op
-# Warmup Iteration   5: 18498039,116 ns/op
-Iteration   1: 18801829,476 ns/op
-Iteration   2: 18741858,150 ns/op
-Iteration   3: 18360683,928 ns/op
-Iteration   4: 18719584,607 ns/op
-Iteration   5: 18722452,422 ns/op
+# Warmup Iteration   1: 10666825,947 ns/op
+# Warmup Iteration   2: 10330806,347 ns/op
+# Warmup Iteration   3: 9902391,042 ns/op
+# Warmup Iteration   4: 9762763,171 ns/op
+# Warmup Iteration   5: 10308195,317 ns/op
+Iteration   1: 10377974,140 ns/op
+Iteration   2: 10124759,100 ns/op
+Iteration   3: 9645363,160 ns/op
+Iteration   4: 9559501,717 ns/op
+Iteration   5: 10315493,175 ns/op
 
 
 Result "benchmark.MyBenchmark.shelf":
-  18669281,717 ±(99.9%) 676405,768 ns/op [Average]
-  (min, avg, max) = (18360683,928, 18669281,717, 18801829,476), stdev = 175660,430
-  CI (99.9%): [17992875,948, 19345687,485] (assumes normal distribution)
+  10004618,259 ±(99.9%) 1463326,531 ns/op [Average]
+  (min, avg, max) = (9559501,717, 10004618,259, 10377974,140), stdev = 380021,253
+  CI (99.9%): [8541291,728, 11467944,789] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -738,36 +968,26 @@ Result "benchmark.MyBenchmark.shelf":
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 10000, maxSize = 250)
+# Parameters: (count = 3162, maxSize = 100)
 
-# Run progress: 91,67% complete, ETA 00:02:44
+# Run progress: 83,33% complete, ETA 00:10:01
 # Fork: 1 of 1
-# Warmup Iteration   1: <failure>
-
-java.lang.IllegalStateException
-	at shelf.EmptySpace.horizontalSplit(EmptySpace.java:42)
-	at shelf.YShelf.<init>(YShelf.java:25)
-	at shelf.ZShelf.<init>(ZShelf.java:30)
-	at shelf.ShelfBestAreaFit.createZShelf(ShelfBestAreaFit.java:65)
-	at shelf.ShelfBestAreaFit.fit(ShelfBestAreaFit.java:48)
-	at shelf.ShelfBestAreaFit.solve(ShelfBestAreaFit.java:27)
-	at benchmark.MyBenchmark.shelf(MyBenchmark.java:53)
-	at benchmark.generated.MyBenchmark_shelf_jmhTest.shelf_avgt_jmhStub(MyBenchmark_shelf_jmhTest.java:193)
-	at benchmark.generated.MyBenchmark_shelf_jmhTest.shelf_AverageTime(MyBenchmark_shelf_jmhTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+# Warmup Iteration   1: 43057676,708 ns/op
+# Warmup Iteration   2: 45344679,787 ns/op
+# Warmup Iteration   3: 43646739,043 ns/op
+# Warmup Iteration   4: 47755602,805 ns/op
+# Warmup Iteration   5: 45801331,283 ns/op
+Iteration   1: 46250076,111 ns/op
+Iteration   2: 44506157,849 ns/op
+Iteration   3: 46217569,627 ns/op
+Iteration   4: 45491201,632 ns/op
+Iteration   5: 46245067,839 ns/op
 
 
+Result "benchmark.MyBenchmark.shelf":
+  45742014,611 ±(99.9%) 2937356,586 ns/op [Average]
+  (min, avg, max) = (44506157,849, 45742014,611, 46250076,111), stdev = 762822,177
+  CI (99.9%): [42804658,025, 48679371,197] (assumes normal distribution)
 
 
 # JMH version: 1.21
@@ -780,39 +1000,157 @@ java.lang.IllegalStateException
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
 # Benchmark: benchmark.MyBenchmark.shelf
-# Parameters: (count = 10000, maxSize = 550)
+# Parameters: (count = 3162, maxSize = 600)
 
-# Run progress: 95,83% complete, ETA 00:01:18
+# Run progress: 86,11% complete, ETA 00:08:21
 # Fork: 1 of 1
-# Warmup Iteration   1: <failure>
-
-java.lang.IllegalStateException
-	at shelf.EmptySpace.horizontalSplit(EmptySpace.java:42)
-	at shelf.YShelf.<init>(YShelf.java:25)
-	at shelf.ZShelf.<init>(ZShelf.java:30)
-	at shelf.ShelfBestAreaFit.createZShelf(ShelfBestAreaFit.java:65)
-	at shelf.ShelfBestAreaFit.fit(ShelfBestAreaFit.java:48)
-	at shelf.ShelfBestAreaFit.solve(ShelfBestAreaFit.java:27)
-	at benchmark.MyBenchmark.shelf(MyBenchmark.java:53)
-	at benchmark.generated.MyBenchmark_shelf_jmhTest.shelf_avgt_jmhStub(MyBenchmark_shelf_jmhTest.java:193)
-	at benchmark.generated.MyBenchmark_shelf_jmhTest.shelf_AverageTime(MyBenchmark_shelf_jmhTest.java:156)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
-	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+# Warmup Iteration   1: 129048239,654 ns/op
+# Warmup Iteration   2: 123795361,370 ns/op
+# Warmup Iteration   3: 126265184,425 ns/op
+# Warmup Iteration   4: 128647349,436 ns/op
+# Warmup Iteration   5: 126944047,013 ns/op
+Iteration   1: 120977529,687 ns/op
+Iteration   2: 129852553,410 ns/op
+Iteration   3: 130686026,571 ns/op
+Iteration   4: 128420172,833 ns/op
+Iteration   5: 129940171,948 ns/op
 
 
+Result "benchmark.MyBenchmark.shelf":
+  127975290,890 ±(99.9%) 15390482,578 ns/op [Average]
+  (min, avg, max) = (120977529,687, 127975290,890, 130686026,571), stdev = 3996859,451
+  CI (99.9%): [112584808,312, 143365773,467] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:30:06
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.shelf
+# Parameters: (count = 10000, maxSize = 100)
+
+# Run progress: 88,89% complete, ETA 00:06:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 692679686,200 ns/op
+# Warmup Iteration   2: 660673598,438 ns/op
+# Warmup Iteration   3: 665416080,313 ns/op
+# Warmup Iteration   4: 661797083,188 ns/op
+# Warmup Iteration   5: 646536652,438 ns/op
+Iteration   1: 659450792,813 ns/op
+Iteration   2: 656313303,500 ns/op
+Iteration   3: 674876251,933 ns/op
+Iteration   4: 651895248,500 ns/op
+Iteration   5: 654005686,938 ns/op
+
+
+Result "benchmark.MyBenchmark.shelf":
+  659308256,737 ±(99.9%) 35208789,392 ns/op [Average]
+  (min, avg, max) = (651895248,500, 659308256,737, 674876251,933), stdev = 9143610,795
+  CI (99.9%): [624099467,345, 694517046,128] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.shelf
+# Parameters: (count = 10000, maxSize = 600)
+
+# Run progress: 91,67% complete, ETA 00:05:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 1508638207,143 ns/op
+# Warmup Iteration   2: 1460148216,714 ns/op
+# Warmup Iteration   3: 1605567642,571 ns/op
+# Warmup Iteration   4: 1506079636,143 ns/op
+# Warmup Iteration   5: 1466238324,286 ns/op
+Iteration   1: 1460222591,571 ns/op
+Iteration   2: 1458589327,429 ns/op
+Iteration   3: 1445672285,857 ns/op
+Iteration   4: 1503386613,571 ns/op
+Iteration   5: 1448771138,571 ns/op
+
+
+Result "benchmark.MyBenchmark.shelf":
+  1463328391,400 ±(99.9%) 89489527,340 ns/op [Average]
+  (min, avg, max) = (1445672285,857, 1463328391,400, 1503386613,571), stdev = 23240146,064
+  CI (99.9%): [1373838864,060, 1552817918,740] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.shelf
+# Parameters: (count = 31623, maxSize = 100)
+
+# Run progress: 94,44% complete, ETA 00:03:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 7663520102,000 ns/op
+# Warmup Iteration   2: 7198331409,000 ns/op
+# Warmup Iteration   3: 7387934610,000 ns/op
+# Warmup Iteration   4: 7102734760,500 ns/op
+# Warmup Iteration   5: 7172598920,500 ns/op
+Iteration   1: 7076970194,500 ns/op
+Iteration   2: 7288119089,500 ns/op
+Iteration   3: 7473941280,000 ns/op
+Iteration   4: 7795332263,000 ns/op
+Iteration   5: 7036037962,500 ns/op
+
+
+Result "benchmark.MyBenchmark.shelf":
+  7334080157,900 ±(99.9%) 1201378908,179 ns/op [Average]
+  (min, avg, max) = (7036037962,500, 7334080157,900, 7795332263,000), stdev = 311994287,312
+  CI (99.9%): [6132701249,721, 8535459066,079] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: benchmark.MyBenchmark.shelf
+# Parameters: (count = 31623, maxSize = 600)
+
+# Run progress: 97,22% complete, ETA 00:01:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 16235248944,000 ns/op
+# Warmup Iteration   2: 15082107935,000 ns/op
+# Warmup Iteration   3: 16311420242,000 ns/op
+# Warmup Iteration   4: 15821361632,000 ns/op
+# Warmup Iteration   5: 16559382900,000 ns/op
+Iteration   1: 17076726884,000 ns/op
+Iteration   2: 16663803509,000 ns/op
+Iteration   3: 16849884247,000 ns/op
+Iteration   4: 16595656474,000 ns/op
+Iteration   5: 16773049261,000 ns/op
+
+
+Result "benchmark.MyBenchmark.shelf":
+  16791824075,000 ±(99.9%) 719782281,440 ns/op [Average]
+  (min, avg, max) = (16595656474,000, 16791824075,000, 17076726884,000), stdev = 186925172,723
+  CI (99.9%): [16072041793,560, 17511606356,440] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:02:09
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -820,22 +1158,40 @@ experiments, perform baseline and negative tests that provide experimental contr
 the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 Do not assume the numbers tell you what you want them to tell.
 
-Benchmark                     (count)  (maxSize)  Mode  Cnt         Score         Error  Units
-MyBenchmark.naive                  10        250  avgt    5     82128,980 ±    8378,889  ns/op
-MyBenchmark.naive                  10        550  avgt    5     74529,962 ±   14093,057  ns/op
-MyBenchmark.naive                 100        250  avgt    5      1879,822 ±     191,534  ns/op
-MyBenchmark.naive                 100        550  avgt    5      1878,232 ±      75,559  ns/op
-MyBenchmark.naive                1000        250  avgt    5     11919,166 ±     396,499  ns/op
-MyBenchmark.naive                1000        550  avgt    5     11906,303 ±     218,136  ns/op
-MyBenchmark.naiveWithSorting       10        250  avgt    5    197330,005 ±   87795,081  ns/op
-MyBenchmark.naiveWithSorting       10        550  avgt    5    205862,477 ±  115116,417  ns/op
-MyBenchmark.naiveWithSorting      100        250  avgt    5     22111,806 ±    3676,932  ns/op
-MyBenchmark.naiveWithSorting      100        550  avgt    5     33817,688 ±    1200,179  ns/op
-MyBenchmark.naiveWithSorting     1000        250  avgt    5     13445,918 ±     642,527  ns/op
-MyBenchmark.naiveWithSorting     1000        550  avgt    5     14299,396 ±     449,442  ns/op
-MyBenchmark.shelf                  10        250  avgt    5      2255,136 ±     836,964  ns/op
-MyBenchmark.shelf                  10        550  avgt    5      2792,372 ±     677,251  ns/op
-MyBenchmark.shelf                 100        250  avgt    5     72725,936 ±    6488,087  ns/op
-MyBenchmark.shelf                 100        550  avgt    5     74811,021 ±   15464,292  ns/op
-MyBenchmark.shelf                1000        250  avgt    5  18972275,470 ± 1384186,958  ns/op
-MyBenchmark.shelf                1000        550  avgt    5  18669281,717 ±  676405,768  ns/op
+Benchmark                     (count)  (maxSize)  Mode  Cnt            Score            Error  Units
+MyBenchmark.naive                 100        100  avgt    5         1829,123 ±         47,502  ns/op
+MyBenchmark.naive                 100        600  avgt    5         1304,354 ±         63,020  ns/op
+MyBenchmark.naive                 316        100  avgt    5         4414,435 ±        270,905  ns/op
+MyBenchmark.naive                 316        600  avgt    5         3760,954 ±        490,295  ns/op
+MyBenchmark.naive                1000        100  avgt    5        13142,999 ±        782,429  ns/op
+MyBenchmark.naive                1000        600  avgt    5        12272,610 ±        863,699  ns/op
+MyBenchmark.naive                3162        100  avgt    5        40308,164 ±       4532,954  ns/op
+MyBenchmark.naive                3162        600  avgt    5        36839,435 ±       3727,364  ns/op
+MyBenchmark.naive               10000        100  avgt    5       124884,825 ±       3916,508  ns/op
+MyBenchmark.naive               10000        600  avgt    5       125239,795 ±       7138,472  ns/op
+MyBenchmark.naive               31623        100  avgt    5       411301,115 ±      34187,699  ns/op
+MyBenchmark.naive               31623        600  avgt    5       397450,859 ±      19917,813  ns/op
+MyBenchmark.naiveWithSorting      100        100  avgt    5        22375,198 ±       2361,137  ns/op
+MyBenchmark.naiveWithSorting      100        600  avgt    5         1720,207 ±        105,712  ns/op
+MyBenchmark.naiveWithSorting      316        100  avgt    5        68321,411 ±       3750,413  ns/op
+MyBenchmark.naiveWithSorting      316        600  avgt    5         5006,492 ±        251,138  ns/op
+MyBenchmark.naiveWithSorting     1000        100  avgt    5       232685,692 ±      38413,459  ns/op
+MyBenchmark.naiveWithSorting     1000        600  avgt    5        14694,112 ±       1510,879  ns/op
+MyBenchmark.naiveWithSorting     3162        100  avgt    5       719814,882 ±      37479,382  ns/op
+MyBenchmark.naiveWithSorting     3162        600  avgt    5        40816,557 ±       2513,202  ns/op
+MyBenchmark.naiveWithSorting    10000        100  avgt    5      2270282,079 ±     119085,519  ns/op
+MyBenchmark.naiveWithSorting    10000        600  avgt    5       123636,327 ±      11582,519  ns/op
+MyBenchmark.naiveWithSorting    31623        100  avgt    5      7435871,953 ±    1339374,948  ns/op
+MyBenchmark.naiveWithSorting    31623        600  avgt    5       440689,420 ±      52944,728  ns/op
+MyBenchmark.shelf                 100        100  avgt    5        74065,474 ±      10009,902  ns/op
+MyBenchmark.shelf                 100        600  avgt    5       111492,353 ±      19423,541  ns/op
+MyBenchmark.shelf                 316        100  avgt    5       462795,390 ±      75276,568  ns/op
+MyBenchmark.shelf                 316        600  avgt    5       942320,213 ±     238260,932  ns/op
+MyBenchmark.shelf                1000        100  avgt    5      3739264,602 ±     490279,477  ns/op
+MyBenchmark.shelf                1000        600  avgt    5     10004618,259 ±    1463326,531  ns/op
+MyBenchmark.shelf                3162        100  avgt    5     45742014,611 ±    2937356,586  ns/op
+MyBenchmark.shelf                3162        600  avgt    5    127975290,890 ±   15390482,578  ns/op
+MyBenchmark.shelf               10000        100  avgt    5    659308256,737 ±   35208789,392  ns/op
+MyBenchmark.shelf               10000        600  avgt    5   1463328391,400 ±   89489527,340  ns/op
+MyBenchmark.shelf               31623        100  avgt    5   7334080157,900 ± 1201378908,179  ns/op
+MyBenchmark.shelf               31623        600  avgt    5  16791824075,000 ±  719782281,440  ns/op

@@ -20,9 +20,9 @@ public class MyBenchmark {
     static public class XDState {
         Bin bin;
         Random random;
-        @Param({"10", "100", "1000", "10000"})
+        @Param({"1000", "2000", "3000"})
         int count;
-        @Param({"250", "550"})
+        @Param({"400"})
         int maxSize;
         ShelfBestAreaFit shelfBestAreaFit;
         Naive naive;
@@ -42,7 +42,7 @@ public class MyBenchmark {
         public void prepIter(){
             bin.getCuboids().clear();
             IntStream.range(0, count).forEach(n -> {
-                bin.add(new Cuboid(random.nextInt(count) + 1, random.nextInt(count) + 1, random.nextInt(count) + 1, bin));
+                bin.add(new Cuboid(random.nextInt(maxSize) + 1, random.nextInt(maxSize) + 1, random.nextInt(maxSize) + 1, bin));
             });
         }
 

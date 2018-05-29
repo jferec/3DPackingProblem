@@ -25,6 +25,7 @@ import util.Cuboid;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.stream.IntStream;
 
 public class VisualizationApp extends Application {
@@ -70,12 +71,14 @@ public class VisualizationApp extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(102, 102);
-        IntStream.range(0,10000).forEach((n)->{
-            bin.add(new Cuboid((int)(Math.ceil(Math.random()* 50)),(int)(Math.ceil(Math.random()* 50)),(int)(Math.ceil(Math.random()* 50)), bin));
+        Bin bin = new Bin(100, 100);
+        int max = 40;
+        Random random = new Random();
+        IntStream.range(0,200).forEach((n)->{
+            bin.add(new Cuboid(random.nextInt(max) + 1,random.nextInt(max) + 1,random.nextInt(max) + 1, bin));
         });
 
-        Algorithm algorithm2 = new Naive();
+        Algorithm algorithm2 = new ShelfBestAreaFit();
         algorithm2.solve(bin);
         System.out.println(bin.getH());
         System.out.println((double)Math.round(bin.getFill() * 100.0)/100 + " %");
@@ -97,7 +100,6 @@ public class VisualizationApp extends Application {
             boxes.add(box1);
             world.getChildren().addAll(box1);
         }
-
 
 
 
