@@ -11,19 +11,23 @@ import util.*;
  */
 public class Naive extends Algorithm {
 
+    /**
+     * 1. Method initially splits Bin bin Z plane area into Sectors.
+     * 2. All cuboids in the bin are assigned into sectors one by one.
+     *
+     * @param bin
+     * @return
+     */
     @Override
-    public Bin solve(Bin bin)
-    {
+    public Bin solve(Bin bin) {
         ArrayList<Sector> sectors = new ArrayList<>();
         Sector.createSectors(sectors, bin);
 
         int i = 0;
-
         for(Cuboid c : bin.getCuboids()){
             Sector.fit(c, sectors.get(i));
             i = (i + 1)%sectors.size();
         }
-
         return bin;
     }
 

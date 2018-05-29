@@ -5,33 +5,40 @@ import util.Cuboid;
 
 import java.util.ArrayList;
 
-public class Sector {
-    final int x;
-    final int y;
-    int height;
+class Sector {
+    private final int x;
+    private final int y;
+    private int height;
 
-    Sector(int x, int y) {
+    private Sector(int x, int y) {
         this.x = x;
         this.y = y;
         height = 0;
     }
-    public int getX() {
+
+    private int getX() {
     return x;
 }
 
-    public int getY() {
+    private int getY() {
         return y;
     }
 
-    public int getHeight() {
+    int getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    private void setHeight(int height) {
         this.height = height;
     }
 
-    public static void createSectors(ArrayList <Sector> sectors, Bin bin){
+    /**
+     * Method rotates all the Cuboid objects in the bin to the smallest height. Bin Z plane is divided into sectors,
+     * which are calculated based on maximal area taken by any Cuboid c in the Bin bin.
+     * @param sectors - ArrayList<Sector> stores all calculated sectors.
+     * @param bin - bin that we are assigning sectors to.
+     */
+    static void createSectors(ArrayList <Sector> sectors, Bin bin){
         int xMax = 0, yMax = 0;
         for(Cuboid c : bin.getCuboids()) {
             c.rotateToSmallestHeight();
@@ -43,24 +50,24 @@ public class Sector {
             if(c.getY() > yMax)
                 yMax = c.getY();
         }
-        System.out.println(xMax + " " + yMax);
 
         for (int i = 0; i <= bin.getX() - xMax; i += xMax) {
             for (int j = 0; j <= bin.getY() - yMax; j += yMax) {
                 sectors.add(new Sector(i, j));
-                System.out.println("lol");
             }
         }
     }
 
-    public static void fit(Cuboid c, Sector s){
+    /**
+     * Method assigns Cuboid c to Sector s, accordingly increasing it's height.
+     * @param c - Cuboid object to be put into Sector s.
+     * @param s - Sector that Cuboid c gonna be assigned to.
+     */
+    static void fit(Cuboid c, Sector s){
         c.setBinPosition(s.getX(), s.getY(), s.getHeight());
         s.setHeight(s.getHeight() + c.getZ());
         if(s.getHeight() > c.getBin().getH())
             c.getBin().setH(s.getHeight());
     }
-
-
-
 
 }

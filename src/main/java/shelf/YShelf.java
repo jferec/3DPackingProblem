@@ -5,15 +5,13 @@ import util.Cuboid;
 import java.util.HashSet;
 import java.util.Set;
 
-public class YShelf {
+class YShelf {
 
     private final int x;
     private final int y;
     private final int h;
     private final ZShelf zShelf;
     private Set<EmptySpace> emptySpaces;
-
-
 
     YShelf(ZShelf zShelf, Cuboid c) {
         this.x = c.getBin().getX();
@@ -27,28 +25,23 @@ public class YShelf {
         e.horizontalSplit(c);
     }
 
-
-
-    public Set<EmptySpace> getEmptySpaces() {
+    Set<EmptySpace> getEmptySpaces() {
         return emptySpaces;
     }
 
-
-    public ZShelf getzShelf() {
+    ZShelf getzShelf() {
         return zShelf;
     }
 
-
-    public int getX() {
+    int getX() {
         return x;
     }
 
-
-    public int getY() {
+    int getY() {
         return y;
     }
 
-    public int getH() {
+    int getH() {
         return h;
     }
 

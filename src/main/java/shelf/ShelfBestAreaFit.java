@@ -12,15 +12,16 @@ public class ShelfBestAreaFit extends Algorithm {
     private ArrayList<ZShelf> zShelves;
 
     public ShelfBestAreaFit(){
-        zShelves = new ArrayList<>();
+
     }
 
-    public ArrayList<ZShelf> getZShelves() {
+    private ArrayList<ZShelf> getZShelves() {
         return zShelves;
     }
 
     @Override
     public Bin solve(Bin bin) {
+        zShelves = new ArrayList<>();
         bin.getCuboids().sort(Comparator.comparing(Cuboid::getZ).reversed());
         for(Cuboid c: bin.getCuboids()){
             fit(c, getZShelves());
@@ -28,7 +29,7 @@ public class ShelfBestAreaFit extends Algorithm {
         return bin;
     }
 
-    void fit(Cuboid c, ArrayList<ZShelf> shelves) {
+    private void fit(Cuboid c, ArrayList<ZShelf> shelves) {
         EmptySpace bestEmptySpace = findBestFit(c, shelves);
         if(bestEmptySpace != null){
             bestEmptySpace.horizontalSplit(c);
@@ -46,8 +47,6 @@ public class ShelfBestAreaFit extends Algorithm {
         }
         createZShelf(c);
     }
-
-
 
     private int areaFit(Cuboid c, EmptySpace e){
         return e.getArea() - c.getZPlaneArea();

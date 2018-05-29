@@ -1,6 +1,5 @@
 package shelf;
 
-import org.junit.Assert;
 import util.Cuboid;
 
 /***
@@ -23,7 +22,6 @@ public class EmptySpace {
         this.ys = ys;
         this.ye = ye;
         this.shelf = shelf;
-        System.out.println("s: " + xs + " " + ys + "| e: " + xe + " " + ye);
     }
 
     /***
@@ -44,7 +42,6 @@ public class EmptySpace {
             throw new IllegalStateException();
         if(c.getBinPosition().getX() < 0 || c.getBinPosition().getY() < 0 || c.getBinPosition().getZ() < 0)
             throw new IllegalStateException();
-        System.out.println("Cuboid "  + "(" + c.getX() + " " + c.getY() + " " + c.getZ() + ")" + c.getBinPosition().getX() + " " +  c.getBinPosition().getY() + " " +  c.getBinPosition().getZ());
         getShelf().getEmptySpaces().remove(this);
     }
 
@@ -59,7 +56,6 @@ public class EmptySpace {
                 getShelf().getEmptySpaces().add(new EmptySpace(getXs() + c.getX(), getYs(), getXe(), getYs(), getShelf()));
 
         c.setBinPosition(getXs(), getYs() + getShelf().getH(), getShelf().getzShelf().getH());
-        System.out.println("Cuboid "  + "(" + c.getX() + " " + c.getY() + " " + c.getZ() + ")" + c.getBinPosition().getX() + " " +  c.getBinPosition().getY() + " " +  c.getBinPosition().getZ());
         getShelf().getEmptySpaces().remove(this);
     }
 
@@ -76,30 +72,16 @@ public class EmptySpace {
         return xs;
     }
 
-    void setXs(int xs) {
-        this.xs = xs;
-    }
-
     private int getXe() {
         return xe;
-    }
-
-    void setXe(int xe) {
-        this.xe = xe;
     }
 
     private int getYs() {
         return ys;
     }
 
-    void setYs(int ys) { this.ys = ys; }
-
     private int getYe() {
         return ye;
-    }
-
-    void setYe(int ye) {
-        this.ye = ye;
     }
 
     int getX(){

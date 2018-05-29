@@ -1,5 +1,7 @@
-package app;
+package camera;
 
+import camera.XformCamera;
+import camera.XformWorld;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.geometry.Point3D;
@@ -25,17 +27,17 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class App extends Application {
+public class VisualizationApp extends Application {
 
-    final Group root = new Group();
-    final XformWorld world = new XformWorld();
-    final PerspectiveCamera camera = new PerspectiveCamera(true);
-    final XformCamera cameraXform = new XformCamera();
+    private final Group root = new Group();
+    private final XformWorld world = new XformWorld();
+    private final PerspectiveCamera camera = new PerspectiveCamera(true);
+    private final XformCamera cameraXform = new XformCamera();
     private static final double CAMERA_INITIAL_DISTANCE = -1000;
     private static final double CAMERA_NEAR_CLIP = 0.1;
     private static final double CAMERA_FAR_CLIP = 10000.0;
-    double mousePosX, mousePosY, mouseOldX, mouseOldY, mouseDeltaX, mouseDeltaY;
-    double mouseFactorX, mouseFactorY;
+    private double mousePosX, mousePosY, mouseOldX, mouseOldY, mouseDeltaX, mouseDeltaY;
+    private double mouseFactorX, mouseFactorY;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -155,42 +157,8 @@ public class App extends Application {
 
 }
 
-class XformWorld extends Group {
-    final Translate t = new Translate(0.0, 0.0, 0.0);
-    final Rotate rx = new Rotate(0, 0, 0, 0, Rotate.X_AXIS);
-    final Rotate ry = new Rotate(0, 0, 0, 0, Rotate.Y_AXIS);
-    final Rotate rz = new Rotate(0, 0, 0, 0, Rotate.Z_AXIS);
-
-    public XformWorld() {
-        super();
-        this.getTransforms().addAll(t, rx, ry, rz);
-    }
-}
-
-class XformCamera extends Group {
-    Point3D px = new Point3D(1.0, 0.0, 0.0);
-    Point3D py = new Point3D(0.0, 1.0, 0.0);
-    Rotate r;
-    Transform t = new Rotate();
-
-    public XformCamera() {
-        super();
-    }
-
-    public void rx(double angle) {
-        r = new Rotate(angle, px);
-        this.t = t.createConcatenation(r);
-        this.getTransforms().clear();
-        this.getTransforms().addAll(t);
-    }
-
-    public void ry(double angle) {
-        r = new Rotate(angle, py);
-        this.t = t.createConcatenation(r);
-        this.getTransforms().clear();
-        this.getTransforms().addAll(t);
-    }
 
 
 
-}
+
+

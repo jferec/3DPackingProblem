@@ -30,23 +30,23 @@ public class ZShelf {
         yShelves.add(new YShelf(this, c));
     }
 
-    public void increaseOccupiedH(int value){
+    void increaseOccupiedH(int value){
         setOccupiedH(getOccupiedH() + value);
     }
 
-    public ArrayList<YShelf> getYShelves() {
+    ArrayList<YShelf> getYShelves() {
         return yShelves;
     }
 
-    public int getH() {
+    int getH() {
         return h;
     }
 
-    public int getOccupiedH() {
+    int getOccupiedH() {
         return occupiedH;
     }
 
-    public void setOccupiedH(int occupiedH) {
+    void setOccupiedH(int occupiedH) {
         this.occupiedH = occupiedH;
     }
 
