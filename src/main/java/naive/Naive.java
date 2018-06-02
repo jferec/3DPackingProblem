@@ -29,6 +29,7 @@ public class Naive extends Algorithm {
             Sector.fit(c, sectors.get(i));
             i = (i + 1)%sectors.size();
         }
+        System.out.println("Naive solution ---ACCURACY : " + bin.getFill()+ "---");
         return bin;
     }
 

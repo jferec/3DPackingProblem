@@ -1,0 +1,1449 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 2500, maxSize = 250)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 73.21205878584946---
+102765,715 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 73.21205878584946---
+47786,936 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 73.21205878584946---
+44678,598 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 2500, maxSize = 500)
+
+# Run progress: 1,67% complete, ETA 00:00:27
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 86.52798778012962---
+146456,317 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 86.52798778012962---
+64020,869 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 86.52798778012962---
+63440,902 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 2500, maxSize = 750)
+
+# Run progress: 3,33% complete, ETA 00:00:28
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 87.1589925814051---
+194915,284 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 87.1589925814051---
+97705,122 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 87.1589925814051---
+98372,661 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 5000, maxSize = 250)
+
+# Run progress: 5,00% complete, ETA 00:00:30
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 75.74269990784825---
+295898,436 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 75.74269990784825---
+212687,026 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 75.74269990784825---
+212657,514 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 5000, maxSize = 500)
+
+# Run progress: 6,67% complete, ETA 00:00:35
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.87921835805182---
+404870,565 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 88.87921835805182---
+280242,226 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.87921835805182---
+276624,491 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 5000, maxSize = 750)
+
+# Run progress: 8,33% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.9612055992901---
+542175,728 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 88.9612055992901---
+441475,502 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.9612055992901---
+433340,252 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 7500, maxSize = 250)
+
+# Run progress: 10,00% complete, ETA 00:00:48
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 76.31476180738093---
+591057,801 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 76.31476180738093---
+489107,182 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 76.31476180738093---
+487094,941 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 7500, maxSize = 500)
+
+# Run progress: 11,67% complete, ETA 00:00:54
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 89.42132657712868---
+808217,754 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 89.42132657712868---
+666749,535 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 89.42132657712868---
+693695,205 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 7500, maxSize = 750)
+
+# Run progress: 13,33% complete, ETA 00:01:02
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.78143403560978---
+1134976,636 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 88.78143403560978---
+1003960,004 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.78143403560978---
+1157511,289 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 10000, maxSize = 250)
+
+# Run progress: 15,00% complete, ETA 00:01:14
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 77.71232620994824---
+1103965,425 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 77.71232620994824---
+905909,083 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 77.71232620994824---
+885908,256 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 10000, maxSize = 500)
+
+# Run progress: 16,67% complete, ETA 00:01:21
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.27851664576694---
+1478566,738 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.27851664576694---
+1277306,787 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.27851664576694---
+1263651,589 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 10000, maxSize = 750)
+
+# Run progress: 18,33% complete, ETA 00:01:31
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.84930481496478---
+1879263,981 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.84930481496478---
+1836698,989 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.84930481496478---
+1824850,734 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 12500, maxSize = 250)
+
+# Run progress: 20,00% complete, ETA 00:01:45
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 77.36972535211267---
+1565681,376 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 77.36972535211267---
+1423402,550 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 77.36972535211267---
+1413026,345 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 12500, maxSize = 500)
+
+# Run progress: 21,67% complete, ETA 00:01:52
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.18266895153828---
+2124839,411 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.18266895153828---
+1780274,785 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.18266895153828---
+1777192,750 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 12500, maxSize = 750)
+
+# Run progress: 23,33% complete, ETA 00:02:01
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.21712193268966---
+2898934,087 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.21712193268966---
+2646981,591 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.21712193268966---
+2611146,842 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 15000, maxSize = 250)
+
+# Run progress: 25,00% complete, ETA 00:02:16
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.43289894168582---
+2197606,612 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.43289894168582---
+2173704,162 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.43289894168582---
+2075863,671 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 15000, maxSize = 500)
+
+# Run progress: 26,67% complete, ETA 00:02:23
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.46803499062308---
+2973786,024 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.46803499062308---
+2777820,513 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.46803499062308---
+2682055,776 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 15000, maxSize = 750)
+
+# Run progress: 28,33% complete, ETA 00:02:33
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.1856314833026---
+4124530,181 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.1856314833026---
+4315331,487 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.1856314833026---
+4158438,979 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 17500, maxSize = 250)
+
+# Run progress: 30,00% complete, ETA 00:02:51
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.2125680549912---
+3423539,201 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.2125680549912---
+3069095,255 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.2125680549912---
+3041612,602 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 17500, maxSize = 500)
+
+# Run progress: 31,67% complete, ETA 00:03:00
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.68025547213993---
+4316973,549 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.68025547213993---
+3703337,470 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.68025547213993---
+3630798,664 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 17500, maxSize = 750)
+
+# Run progress: 33,33% complete, ETA 00:03:10
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.88453799342284---
+5433524,698 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.88453799342284---
+5307995,936 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.88453799342284---
+5432744,246 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 20000, maxSize = 250)
+
+# Run progress: 35,00% complete, ETA 00:03:27
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.6732796965605---
+3932808,883 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.6732796965605---
+3686879,314 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.6732796965605---
+3621059,202 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 20000, maxSize = 500)
+
+# Run progress: 36,67% complete, ETA 00:03:33
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.80718626857632---
+5233876,977 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.80718626857632---
+4797340,173 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.80718626857632---
+4922046,782 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 20000, maxSize = 750)
+
+# Run progress: 38,33% complete, ETA 00:03:42
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.68302761874048---
+7541397,521 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.68302761874048---
+7266469,944 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.68302761874048---
+7407435,826 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 22500, maxSize = 250)
+
+# Run progress: 40,00% complete, ETA 00:04:01
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.13623922710707---
+5133148,843 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.13623922710707---
+4533387,373 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.13623922710707---
+4704861,486 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 22500, maxSize = 500)
+
+# Run progress: 41,67% complete, ETA 00:04:05
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.18332586326929---
+6385065,091 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.18332586326929---
+6019389,424 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.18332586326929---
+6106122,657 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 22500, maxSize = 750)
+
+# Run progress: 43,33% complete, ETA 00:04:14
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.9084584297088---
+9564192,324 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.9084584297088---
+9169039,729 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.9084584297088---
+9222107,633 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 25000, maxSize = 250)
+
+# Run progress: 45,00% complete, ETA 00:04:32
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.1113221297143---
+5999031,571 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.1113221297143---
+5588312,583 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.1113221297143---
+5795544,137 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 25000, maxSize = 500)
+
+# Run progress: 46,67% complete, ETA 00:04:34
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.96193299404901---
+7754488,406 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.96193299404901---
+7678253,915 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.96193299404901---
+7508754,191 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 25000, maxSize = 750)
+
+# Run progress: 48,33% complete, ETA 00:04:41
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.92065239765074---
+11775474,984 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 90.92065239765074---
+10561246,620 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 90.92065239765074---
+10488712,625 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 27500, maxSize = 250)
+
+# Run progress: 50,00% complete, ETA 00:04:56
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.925332048376---
+7054858,807 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.925332048376---
+6646061,601 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.925332048376---
+7018589,084 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 27500, maxSize = 500)
+
+# Run progress: 51,67% complete, ETA 00:04:56
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.30448226290952---
+9968331,836 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.30448226290952---
+9449876,356 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.30448226290952---
+9188384,565 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 27500, maxSize = 750)
+
+# Run progress: 53,33% complete, ETA 00:05:02
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.59837187511967---
+14918136,177 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.59837187511967---
+13602206,440 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.59837187511967---
+13308179,100 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 30000, maxSize = 250)
+
+# Run progress: 55,00% complete, ETA 00:05:17
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.05000289603399---
+8505421,950 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.05000289603399---
+7886178,672 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.05000289603399---
+7862364,435 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 30000, maxSize = 500)
+
+# Run progress: 56,67% complete, ETA 00:05:15
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.1174553888365---
+11454952,347 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.1174553888365---
+10480314,978 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.1174553888365---
+10559368,786 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 30000, maxSize = 750)
+
+# Run progress: 58,33% complete, ETA 00:05:18
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.65016986007069---
+17097078,964 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.65016986007069---
+16798070,585 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.65016986007069---
+14566841,309 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 32500, maxSize = 250)
+
+# Run progress: 60,00% complete, ETA 00:05:29
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.85166448393379---
+10208334,389 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.85166448393379---
+9570410,605 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.85166448393379---
+9676595,494 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 32500, maxSize = 500)
+
+# Run progress: 61,67% complete, ETA 00:05:25
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.65907700762871---
+12565118,410 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.65907700762871---
+12016982,948 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.65907700762871---
+13059873,851 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 32500, maxSize = 750)
+
+# Run progress: 63,33% complete, ETA 00:05:25
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.74383048557449---
+22174456,064 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.74383048557449---
+17508408,072 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.74383048557449---
+18108301,060 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 35000, maxSize = 250)
+
+# Run progress: 65,00% complete, ETA 00:05:33
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.07002888797514---
+12141466,937 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.07002888797514---
+11232723,460 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.07002888797514---
+10783176,222 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 35000, maxSize = 500)
+
+# Run progress: 66,67% complete, ETA 00:05:27
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.40968075191968---
+14524395,646 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.40968075191968---
+14301222,709 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.40968075191968---
+14245617,772 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 35000, maxSize = 750)
+
+# Run progress: 68,33% complete, ETA 00:05:23
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.68648619464037---
+23415642,289 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.68648619464037---
+21968307,778 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.68648619464037---
+20424437,059 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 37500, maxSize = 250)
+
+# Run progress: 70,00% complete, ETA 00:05:27
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.1707987120466---
+13503776,358 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.1707987120466---
+13298230,814 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.1707987120466---
+13125018,404 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 37500, maxSize = 500)
+
+# Run progress: 71,67% complete, ETA 00:05:17
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.46869321444174---
+17209840,762 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.46869321444174---
+16543072,302 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.46869321444174---
+16847745,299 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 37500, maxSize = 750)
+
+# Run progress: 73,33% complete, ETA 00:05:10
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.77636599447719---
+29951472,066 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.77636599447719---
+27360177,852 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.77636599447719---
+24680787,099 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 40000, maxSize = 250)
+
+# Run progress: 75,00% complete, ETA 00:05:12
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.25288127469108---
+17021845,621 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.25288127469108---
+15210790,265 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.25288127469108---
+14766880,059 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 40000, maxSize = 500)
+
+# Run progress: 76,67% complete, ETA 00:04:59
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.83802551595514---
+22160206,465 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.83802551595514---
+19037977,546 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.83802551595514---
+19275481,239 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 40000, maxSize = 750)
+
+# Run progress: 78,33% complete, ETA 00:04:49
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.69187863036605---
+33341048,258 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.69187863036605---
+28152337,461 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.69187863036605---
+29602552,558 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 42500, maxSize = 250)
+
+# Run progress: 80,00% complete, ETA 00:04:45
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.22469842648516---
+19257205,555 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.22469842648516---
+16396564,981 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.22469842648516---
+16852986,170 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 42500, maxSize = 500)
+
+# Run progress: 81,67% complete, ETA 00:04:27
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.61601682308985---
+26400816,573 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.61601682308985---
+22855517,429 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.61601682308985---
+22817605,963 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 42500, maxSize = 750)
+
+# Run progress: 83,33% complete, ETA 00:04:13
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.94617219141841---
+40349037,233 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.94617219141841---
+33919161,063 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.94617219141841---
+35455567,920 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 45000, maxSize = 250)
+
+# Run progress: 85,00% complete, ETA 00:04:02
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.70051911820701---
+21079244,991 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 78.70051911820701---
+17566775,228 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 78.70051911820701---
+17851107,694 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 45000, maxSize = 500)
+
+# Run progress: 86,67% complete, ETA 00:03:40
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 92.08269533842459---
+29241727,697 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 92.08269533842459---
+25076567,778 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 92.08269533842459---
+23550744,028 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 45000, maxSize = 750)
+
+# Run progress: 88,33% complete, ETA 00:03:19
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.78950213296638---
+48523645,346 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.78950213296638---
+37125520,101 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.78950213296638---
+37778003,356 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 47500, maxSize = 250)
+
+# Run progress: 90,00% complete, ETA 00:03:02
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.06407686476174---
+24475280,688 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.06407686476174---
+21294310,585 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.06407686476174---
+21077874,468 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 47500, maxSize = 500)
+
+# Run progress: 91,67% complete, ETA 00:02:35
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.7292294122982---
+32800669,528 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.7292294122982---
+29341652,282 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.7292294122982---
+28638907,931 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 47500, maxSize = 750)
+
+# Run progress: 93,33% complete, ETA 00:02:08
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 92.1168367776198---
+52144165,322 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 92.1168367776198---
+42240974,831 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 92.1168367776198---
+44373427,265 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 50000, maxSize = 250)
+
+# Run progress: 95,00% complete, ETA 00:01:42
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.2021304404986---
+25084895,816 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 79.2021304404986---
+22339029,281 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 79.2021304404986---
+22275613,721 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 50000, maxSize = 500)
+
+# Run progress: 96,67% complete, ETA 00:01:09
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.8421852423254---
+37170907,619 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 91.8421852423254---
+31707207,977 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 91.8421852423254---
+31829228,071 us/op
+
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_171, Java HotSpot(TM) 64-Bit Server VM, 25.171-b11
+# VM invoker: C:\Program Files\Java\jre1.8.0_171\bin\java.exe
+# VM options: <none>
+# Warmup: 2 iterations, single-shot each
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: benchmark.ShelfBenchmark.naive
+# Parameters: (count = 50000, maxSize = 750)
+
+# Run progress: 98,33% complete, ETA 00:00:35
+# Fork: 1 of 1
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 92.01853723341374---
+57851036,161 us/op
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 92.01853723341374---
+50658233,200 us/op
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 92.01853723341374---
+50217921,481 us/op
+
+
+
+# Run complete. Total time: 00:37:45
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark             (count)  (maxSize)  Mode  Cnt         Score   Error  Units
+ShelfBenchmark.naive     2500        250    ss          44678,598          us/op
+ShelfBenchmark.naive     2500        500    ss          63440,902          us/op
+ShelfBenchmark.naive     2500        750    ss          98372,661          us/op
+ShelfBenchmark.naive     5000        250    ss         212657,514          us/op
+ShelfBenchmark.naive     5000        500    ss         276624,491          us/op
+ShelfBenchmark.naive     5000        750    ss         433340,252          us/op
+ShelfBenchmark.naive     7500        250    ss         487094,941          us/op
+ShelfBenchmark.naive     7500        500    ss         693695,205          us/op
+ShelfBenchmark.naive     7500        750    ss        1157511,289          us/op
+ShelfBenchmark.naive    10000        250    ss         885908,256          us/op
+ShelfBenchmark.naive    10000        500    ss        1263651,589          us/op
+ShelfBenchmark.naive    10000        750    ss        1824850,734          us/op
+ShelfBenchmark.naive    12500        250    ss        1413026,345          us/op
+ShelfBenchmark.naive    12500        500    ss        1777192,750          us/op
+ShelfBenchmark.naive    12500        750    ss        2611146,842          us/op
+ShelfBenchmark.naive    15000        250    ss        2075863,671          us/op
+ShelfBenchmark.naive    15000        500    ss        2682055,776          us/op
+ShelfBenchmark.naive    15000        750    ss        4158438,979          us/op
+ShelfBenchmark.naive    17500        250    ss        3041612,602          us/op
+ShelfBenchmark.naive    17500        500    ss        3630798,664          us/op
+ShelfBenchmark.naive    17500        750    ss        5432744,246          us/op
+ShelfBenchmark.naive    20000        250    ss        3621059,202          us/op
+ShelfBenchmark.naive    20000        500    ss        4922046,782          us/op
+ShelfBenchmark.naive    20000        750    ss        7407435,826          us/op
+ShelfBenchmark.naive    22500        250    ss        4704861,486          us/op
+ShelfBenchmark.naive    22500        500    ss        6106122,657          us/op
+ShelfBenchmark.naive    22500        750    ss        9222107,633          us/op
+ShelfBenchmark.naive    25000        250    ss        5795544,137          us/op
+ShelfBenchmark.naive    25000        500    ss        7508754,191          us/op
+ShelfBenchmark.naive    25000        750    ss       10488712,625          us/op
+ShelfBenchmark.naive    27500        250    ss        7018589,084          us/op
+ShelfBenchmark.naive    27500        500    ss        9188384,565          us/op
+ShelfBenchmark.naive    27500        750    ss       13308179,100          us/op
+ShelfBenchmark.naive    30000        250    ss        7862364,435          us/op
+ShelfBenchmark.naive    30000        500    ss       10559368,786          us/op
+ShelfBenchmark.naive    30000        750    ss       14566841,309          us/op
+ShelfBenchmark.naive    32500        250    ss        9676595,494          us/op
+ShelfBenchmark.naive    32500        500    ss       13059873,851          us/op
+ShelfBenchmark.naive    32500        750    ss       18108301,060          us/op
+ShelfBenchmark.naive    35000        250    ss       10783176,222          us/op
+ShelfBenchmark.naive    35000        500    ss       14245617,772          us/op
+ShelfBenchmark.naive    35000        750    ss       20424437,059          us/op
+ShelfBenchmark.naive    37500        250    ss       13125018,404          us/op
+ShelfBenchmark.naive    37500        500    ss       16847745,299          us/op
+ShelfBenchmark.naive    37500        750    ss       24680787,099          us/op
+ShelfBenchmark.naive    40000        250    ss       14766880,059          us/op
+ShelfBenchmark.naive    40000        500    ss       19275481,239          us/op
+ShelfBenchmark.naive    40000        750    ss       29602552,558          us/op
+ShelfBenchmark.naive    42500        250    ss       16852986,170          us/op
+ShelfBenchmark.naive    42500        500    ss       22817605,963          us/op
+ShelfBenchmark.naive    42500        750    ss       35455567,920          us/op
+ShelfBenchmark.naive    45000        250    ss       17851107,694          us/op
+ShelfBenchmark.naive    45000        500    ss       23550744,028          us/op
+ShelfBenchmark.naive    45000        750    ss       37778003,356          us/op
+ShelfBenchmark.naive    47500        250    ss       21077874,468          us/op
+ShelfBenchmark.naive    47500        500    ss       28638907,931          us/op
+ShelfBenchmark.naive    47500        750    ss       44373427,265          us/op
+ShelfBenchmark.naive    50000        250    ss       22275613,721          us/op
+ShelfBenchmark.naive    50000        500    ss       31829228,071          us/op
+ShelfBenchmark.naive    50000        750    ss       50217921,481          us/op

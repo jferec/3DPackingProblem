@@ -23,6 +23,7 @@ public class NaiveWithSorting extends Algorithm {
             Sector.fit(c, findLowestSector(sectors));
             i = (i + 1)%sectors.size();
         }
+        System.out.println("Naive solution with sector sorting ---ACCURACY : " + bin.getFill()+ "---");
         return bin;
     }
 

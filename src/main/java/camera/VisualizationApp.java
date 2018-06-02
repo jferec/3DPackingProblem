@@ -1,21 +1,17 @@
 package camera;
 
-import camera.XformCamera;
-import camera.XformWorld;
+import guillotine.SystematicSearch;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
-import javafx.geometry.Point3D;
+
 import javafx.scene.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
-import javafx.scene.transform.Rotate;
-import javafx.scene.transform.Transform;
-import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
-import naive.Naive;
+import naive.NaiveWithSorting;
 import shelf.ShelfBestAreaFit;
 import util.Algorithm;
 import util.Bin;
@@ -71,26 +67,27 @@ public class VisualizationApp extends Application {
 
     private void buildBodySystem() throws IOException {
 
-        Bin bin = new Bin(100, 100);
-        int max = 40;
+        Bin bin = new Bin(120, 120);
+        int max = 100;
         Random random = new Random();
-        IntStream.range(0,200).forEach((n)->{
+        IntStream.range(0,5).forEach((n)->{
             bin.add(new Cuboid(random.nextInt(max) + 1,random.nextInt(max) + 1,random.nextInt(max) + 1, bin));
         });
 
-        Algorithm algorithm2 = new ShelfBestAreaFit();
-        algorithm2.solve(bin);
-        System.out.println(bin.getH());
-        System.out.println((double)Math.round(bin.getFill() * 100.0)/100 + " %");
+
+        Algorithm algorithm2 = new SystematicSearch();
+        Bin kutas = algorithm2.solve(bin);
+        //System.out.println(bin.getH());
+        //System.out.println((double)Math.round(bin.getFill() * 100.0)/100 + " %");
 
 
         PrintWriter printWriter = new PrintWriter("result.txt");
-        for (Cuboid cuboid : bin.getCuboids())
+        for (Cuboid cuboid : kutas.getCuboids())
            // printWriter.println(cuboid.getBinPosition().getX()+ " " + cuboid.getBinPosition().getY() + " "+  cuboid.getBinPosition().getH());
         printWriter.close();
         ArrayList<Box> boxes = new ArrayList<>();
 
-        for(Cuboid cuboid : bin.getCuboids())
+      for(Cuboid cuboid : kutas.getCuboids())
         {
             Box box1 = new Box(cuboid.getX(), cuboid.getY(), cuboid.getZ());
             box1.setMaterial(new PhongMaterial(new Color(Math.random(), Math.random(), Math.random(), 1)));
@@ -101,17 +98,17 @@ public class VisualizationApp extends Application {
             world.getChildren().addAll(box1);
         }
 
-
-
         PhongMaterial binMaterial = new PhongMaterial();
         binMaterial.setDiffuseColor(Color.web("#ffff0080"));
         //binMaterial.setSpecularColor(Color.INDIANRED);
-        Box binBox = new Box(bin.getX(), bin.getY(), bin.getH());
+        Box binBox = new Box(kutas.getX() , kutas.getY() , kutas.getH() );
         binBox.setMaterial(binMaterial);
-        binBox.setTranslateX((double)bin.getX()/2);
-        binBox.setTranslateY((double)bin.getY()/2);
-        binBox.setTranslateZ((double)bin.getH()/2);
+        binBox.setTranslateX((double)kutas.getX()/2);
+        binBox.setTranslateY((double)kutas.getY()/2);
+        binBox.setTranslateZ((double)kutas.getH()/2);
         world.getChildren().add(binBox);
+
+
     }
 
     private void handleMouse(Scene scene) {

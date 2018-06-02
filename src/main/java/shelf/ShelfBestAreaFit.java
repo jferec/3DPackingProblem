@@ -27,6 +27,7 @@ public class ShelfBestAreaFit extends Algorithm {
         for(Cuboid c: bin.getCuboids()){
             fit(c, getZShelves());
         }
+        System.out.println("Shelf BAF solution---ACCURACY : " + bin.getFill()+ "---");
         return bin;
     }
 
