@@ -4,6 +4,7 @@ There is given a set of cuboids A = {a1, a2, ..., an} represented by Cuboid clas
 
 To run the visualization we need to run 3DPackingProblem/src/main/java/camera/VisualizationApp.java
 with parameters (all required):
+
 (1) algorithm type:
 Naive:                      -nn
 Naive with sector sorting:  -ns
