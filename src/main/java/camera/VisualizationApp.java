@@ -11,6 +11,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
 import javafx.stage.Stage;
+import naive.Naive;
 import naive.NaiveWithSorting;
 import shelf.ShelfBestAreaFit;
 import util.Algorithm;
@@ -18,6 +19,7 @@ import util.Bin;
 import util.Cuboid;
 
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -35,13 +37,14 @@ public class VisualizationApp extends Application {
     private static final double CAMERA_FAR_CLIP = 10000.0;
     private double mousePosX, mousePosY, mouseOldX, mouseOldY, mouseDeltaX, mouseDeltaY;
     private double mouseFactorX, mouseFactorY;
+    private static Bin bin;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
         root.getChildren().add(world);
         root.setDepthTest(DepthTest.ENABLE);
         buildCamera();
-        buildBodySystem();
+        buildBodySystem(bin);
         Scene scene = new Scene(root, 800, 600, true, SceneAntialiasing.BALANCED);
         scene.setFill(Color.BROWN);
         handleMouse(scene);
@@ -53,8 +56,49 @@ public class VisualizationApp extends Application {
         mouseFactorY = 180.0 / scene.getHeight();
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String[] args) throws IOException {
+        String option = args[0];
+        int count = Integer.parseInt(args[1]);
+        int maxEdge = Integer.parseInt(args[2]);
+        int xBin = Integer.parseInt(args[3]);
+        int yBin = Integer.parseInt(args[4]);
+        System.out.println(option + count + " " + maxEdge + " " + xBin + " " + yBin );
+        Random random = new Random();
+        bin = new Bin(xBin, yBin);
+        IntStream.range(0, count).forEach((n)->{
+            bin.add(new Cuboid(random.nextInt(maxEdge) + 1,random.nextInt(maxEdge) + 1,random.nextInt(maxEdge) + 1, bin));
+        });
+        if(count <= 0){
+           System.out.println("Invalid number of cuboids");
+           return;
+        }
+        if(maxEdge > 1000){
+            System.out.println("Max edge size exceeds 1000");
+        }
+        Algorithm a = null;
+        switch (option){
+            case "-nn":{
+                a = new Naive();
+                break;
+            }
+            case "-ns":{
+                a = new NaiveWithSorting();
+                break;
+            }
+            case "-sh":{
+                a = new ShelfBestAreaFit();
+                break;
+            }
+            case "-ss":{
+                a = new SystematicSearch();
+                break;
+            }
+            default:
+                throw new IllegalStateException("??");
+        }
+            bin = a.solve(bin)   ;
+            a.saveResult(bin, "wyniki.txt");
+            launch(args);
     }
 
     private void buildCamera() {
@@ -65,47 +109,29 @@ public class VisualizationApp extends Application {
         camera.setTranslateZ(CAMERA_INITIAL_DISTANCE);
     }
 
-    private void buildBodySystem() throws IOException {
-
-        Bin bin = new Bin(120, 120);
-        int max = 100;
-        Random random = new Random();
-        IntStream.range(0,5).forEach((n)->{
-            bin.add(new Cuboid(random.nextInt(max) + 1,random.nextInt(max) + 1,random.nextInt(max) + 1, bin));
-        });
+    static Box binBox;
+    static boolean ifBinBox = true;
+    private void buildBodySystem(Bin bin) throws IOException {
 
 
-        Algorithm algorithm2 = new SystematicSearch();
-        Bin kutas = algorithm2.solve(bin);
-        //System.out.println(bin.getH());
-        //System.out.println((double)Math.round(bin.getFill() * 100.0)/100 + " %");
-
-
-        PrintWriter printWriter = new PrintWriter("result.txt");
-        for (Cuboid cuboid : kutas.getCuboids())
-           // printWriter.println(cuboid.getBinPosition().getX()+ " " + cuboid.getBinPosition().getY() + " "+  cuboid.getBinPosition().getH());
-        printWriter.close();
-        ArrayList<Box> boxes = new ArrayList<>();
-
-      for(Cuboid cuboid : kutas.getCuboids())
+        for(Cuboid cuboid : bin.getCuboids())
         {
             Box box1 = new Box(cuboid.getX(), cuboid.getY(), cuboid.getZ());
             box1.setMaterial(new PhongMaterial(new Color(Math.random(), Math.random(), Math.random(), 1)));
             box1.setTranslateX(cuboid.getBinPosition().getX()  + (double)cuboid.getX()/2);
             box1.setTranslateY(cuboid.getBinPosition().getY()  + (double)cuboid.getY()/2);
             box1.setTranslateZ(cuboid.getBinPosition().getZ()  + (double)cuboid.getZ()/2);
-            boxes.add(box1);
             world.getChildren().addAll(box1);
         }
 
         PhongMaterial binMaterial = new PhongMaterial();
         binMaterial.setDiffuseColor(Color.web("#ffff0080"));
         //binMaterial.setSpecularColor(Color.INDIANRED);
-        Box binBox = new Box(kutas.getX() , kutas.getY() , kutas.getH() );
+        binBox = new Box(bin.getX() , bin.getY() , bin.getH() );
         binBox.setMaterial(binMaterial);
-        binBox.setTranslateX((double)kutas.getX()/2);
-        binBox.setTranslateY((double)kutas.getY()/2);
-        binBox.setTranslateZ((double)kutas.getH()/2);
+        binBox.setTranslateX((double)bin.getX()/2);
+        binBox.setTranslateY((double)bin.getY()/2);
+        binBox.setTranslateZ((double)bin.getH()/2);
         world.getChildren().add(binBox);
 
 
@@ -149,6 +175,17 @@ public class VisualizationApp extends Application {
             }
             if (keycode == KeyCode.D) {
                 camera.setTranslateX(camera.getTranslateX() + change);
+            }
+            if (keycode == KeyCode.P){
+                if(ifBinBox == true) {
+                    world.getChildren().remove(binBox);
+                    ifBinBox = false;
+                }
+            }
+            if (keycode == KeyCode.O){
+                if(ifBinBox == false)
+                world.getChildren().add(binBox);
+                ifBinBox = true;
             }
         });
 

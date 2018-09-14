@@ -12,8 +12,8 @@ import java.util.Iterator;
 
 public class SystematicSearch extends Algorithm {
 
-    ArrayList<Cuboid> boxes;
-    ArrayList<Position> candidates;
+    private ArrayList<Cuboid> boxes;
+    private ArrayList<Position> candidates;
 
    public SystematicSearch(){
        boxes = new ArrayList<>();
@@ -23,14 +23,15 @@ public class SystematicSearch extends Algorithm {
 
     @Override
     public Bin solve(Bin bin) {
-       BestBinWrapper cw = new BestBinWrapper();
+       bin.setH(0);
+       BestBinWrapper bw = new BestBinWrapper();
        boolean b = true;
             while(b){
-                runInnerLoop(0, bin, cw);
+                runInnerLoop(0, bin, bw);
                 b = bin.nextPermutation();
             }
-        System.out.println(cw.getMinH());
-        return cw.getmBin();
+        System.out.println("Systematic search - ACCURACY : " + bw.getmBin().getFill());
+        return bw.getmBin();
     }
 
 
@@ -114,11 +115,10 @@ public class SystematicSearch extends Algorithm {
                 else if(N == bin.getCuboids().size() - 1)
                 {
                     for (Cuboid cb : bin.getCuboids()) {
-                        System.out.println(cb.getX() + " " + cb.getY() + " " + cb.getZ());
+                        //System.out.println(cb.getX() + " " + cb.getY() + " " + cb.getZ());
                         fit(cb, findBestFit(cb));
                     }
 
-                    System.out.println(a++);
                     if (bin.getH() < cw.getMinH()) {
 
                         cw.setmBin(new Bin(bin));
@@ -131,11 +131,6 @@ public class SystematicSearch extends Algorithm {
             }
 
         }
-
-
-
-    public static int a = 1;
-
 
 }
 

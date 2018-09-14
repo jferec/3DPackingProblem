@@ -105,9 +105,9 @@ public class Bin {
             Collections.swap(cuboids, i, j);
             reverse(cuboids, i + 1, cuboids.size() - 1);
         }
-        for(Cuboid c: cuboids)
+        /*for(Cuboid c: cuboids)
         System.out.print(c.getIndex() + ", ");
-        System.out.println();
+        System.out.println();*/
         return true;
     }
 

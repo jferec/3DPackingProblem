@@ -196,11 +196,11 @@ Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 89.421326577
 
 # Run progress: 13,33% complete, ETA 00:01:02
 # Fork: 1 of 1
-# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.78143403560978---
+# Warmup Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.99143403560978---
 1134976,636 us/op
-# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 88.78143403560978---
+# Warmup Iteration   2: Shelf BAF solution with sector sorting ---ACCURACY : 88.99143403560978---
 1003960,004 us/op
-Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.78143403560978---
+Iteration   1: Shelf BAF solution with sector sorting ---ACCURACY : 88.99143403560978---
 1157511,289 us/op
 
 
